@@ -2,8 +2,8 @@
 _inbox/
 _templates/
 
-# 导入过程记录（内部运营日志）
-docs/import-history/
+# 文档目录（内部文档）
+docs/
 
 # Claude Code 内部工作流文档
 .claude/*.md
