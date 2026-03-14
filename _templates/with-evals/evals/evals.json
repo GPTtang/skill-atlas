@@ -1,0 +1,22 @@
+{
+  "skill": "your-skill-name",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "basic-01",
+      "description": "基本功能测试",
+      "input": "示例输入内容",
+      "expected_contains": ["期望包含的关键词1", "期望包含的关键词2"],
+      "expected_format": "markdown",
+      "notes": "评估说明"
+    },
+    {
+      "id": "edge-01",
+      "description": "边界情况测试",
+      "input": "边界情况的输入",
+      "expected_contains": ["边界情况应包含的内容"],
+      "expected_format": "markdown",
+      "notes": "边界情况说明"
+    }
+  ]
+}

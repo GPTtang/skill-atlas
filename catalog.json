@@ -1,0 +1,606 @@
+{
+  "version": "1.0",
+  "updated_at": "2026-03-14",
+  "categories": [
+    {
+      "id": "ai-agent",
+      "label": "🤖 AI & Agent",
+      "label_en": "AI & Agent"
+    },
+    {
+      "id": "devops",
+      "label": "⚙️ 开发运维",
+      "label_en": "DevOps"
+    },
+    {
+      "id": "writing",
+      "label": "✍️ 写作",
+      "label_en": "Writing"
+    },
+    {
+      "id": "research",
+      "label": "🔬 研究",
+      "label_en": "Research"
+    },
+    {
+      "id": "social-media",
+      "label": "📱 社交媒体",
+      "label_en": "Social Media"
+    },
+    {
+      "id": "document",
+      "label": "📄 文档",
+      "label_en": "Document"
+    },
+    {
+      "id": "productivity",
+      "label": "🗂️ 效率工具",
+      "label_en": "Productivity"
+    },
+    {
+      "id": "recruitment",
+      "label": "🏢 招聘",
+      "label_en": "Recruitment"
+    },
+    {
+      "id": "knowledge-base",
+      "label": "📚 知识库",
+      "label_en": "Knowledge Base"
+    },
+    {
+      "id": "language",
+      "label": "🌏 语言",
+      "label_en": "Language"
+    }
+  ],
+  "skills": [
+    {
+      "name": "agent-reach",
+      "category": "ai-agent",
+      "path": "skills/ai-agent/agent-reach",
+      "description": "统一多平台内容读取与搜索，支持 Twitter/X、Reddit、YouTube、GitHub、B站、小红书等9个平台",
+      "description_en": "Unified multi-platform content reader and searcher supporting Twitter/X, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu, RSS, and any web page via single CLI",
+      "tags": [
+        "twitter",
+        "reddit",
+        "youtube",
+        "github",
+        "bilibili",
+        "小红书",
+        "search",
+        "scraping",
+        "agent"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "viral-writer",
+      "category": "writing",
+      "path": "skills/writing/viral-writer",
+      "description": "自媒体爆款内容创作，基于11个洞见维度，支持微信公众号、小红书、抖音三种平台风格",
+      "description_en": "Viral content creation for WeChat, XiaoHongShu, and TikTok using 11 content insight dimensions including emotion curves, hooks, and persuasion strategies",
+      "tags": [
+        "公众号",
+        "小红书",
+        "抖音",
+        "爆款",
+        "内容创作",
+        "自媒体",
+        "写作"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "zh"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "deep-research",
+      "category": "research",
+      "path": "skills/research/deep-research",
+      "description": "13智能体学术深度研究系统，支持全量、快速、苏格拉底对话、文献综述、事实核查、系统性综述等7种模式",
+      "description_en": "Universal 13-agent academic deep research pipeline with 7 modes: full, quick, socratic, lit-review, fact-check, review, and PRISMA systematic review with meta-analysis",
+      "tags": [
+        "research",
+        "academic",
+        "literature-review",
+        "systematic-review",
+        "APA",
+        "PRISMA",
+        "meta-analysis",
+        "深度研究"
+      ],
+      "complexity": "advanced",
+      "languages": [
+        "zh-TW",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "academic-paper",
+      "category": "research",
+      "path": "skills/research/academic-paper",
+      "description": "12智能体学术论文写作系统，支持 IMRaD、文献综述、理论、案例研究等结构，APA 7.0/MLA/IEEE/Chicago 等格式",
+      "description_en": "12-agent academic paper writing pipeline supporting IMRaD, literature review, theoretical, case study, and conference paper structures with LaTeX/DOCX/PDF output",
+      "tags": [
+        "academic-paper",
+        "LaTeX",
+        "APA",
+        "论文写作",
+        "学术",
+        "摘要",
+        "引用"
+      ],
+      "complexity": "advanced",
+      "languages": [
+        "zh-TW",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "academic-paper-reviewer",
+      "category": "research",
+      "path": "skills/research/academic-paper-reviewer",
+      "description": "5视角学术论文同行评审，模拟主编+3位审稿人+魔鬼代言人对论文进行多维评估",
+      "description_en": "Multi-perspective academic paper review simulating 5 independent reviewers (EIC, 3 peer reviewers, Devil's Advocate) with field-specific expertise",
+      "tags": [
+        "peer-review",
+        "academic",
+        "paper-review",
+        "manuscript",
+        "editorial",
+        "论文审稿"
+      ],
+      "complexity": "advanced",
+      "languages": [
+        "zh-TW",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "academic-pipeline",
+      "category": "research",
+      "path": "skills/research/academic-pipeline",
+      "description": "全流程学术研究编排器：研究→写作→完整性检查→同行评审→修订→再审稿→终稿，9阶段端到端工作流",
+      "description_en": "Full academic research pipeline orchestrator: research → write → integrity check → review → revise → re-review → finalize in a 9-stage automated workflow",
+      "tags": [
+        "academic",
+        "pipeline",
+        "orchestration",
+        "research-to-publication",
+        "full-workflow"
+      ],
+      "complexity": "advanced",
+      "languages": [
+        "zh-TW",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "artifacts-builder",
+      "category": "devops",
+      "path": "skills/devops/artifacts-builder",
+      "description": "构建复杂多组件 claude.ai HTML Artifact，基于 React + TypeScript + shadcn/ui 技术栈，一键打包为单文件 HTML",
+      "description_en": "Build elaborate multi-component claude.ai HTML artifacts using React, TypeScript, Tailwind CSS, and shadcn/ui; bundle everything into a single self-contained HTML file",
+      "tags": [
+        "artifact",
+        "react",
+        "shadcn",
+        "tailwind",
+        "frontend",
+        "claude.ai"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": true,
+      "has_evals": false
+    },
+    {
+      "name": "mcp-builder",
+      "category": "ai-agent",
+      "path": "skills/ai-agent/mcp-builder",
+      "description": "构建高质量 MCP (Model Context Protocol) 服务器，支持 Python (FastMCP) 和 Node/TypeScript 实现",
+      "description_en": "Guide for creating high-quality MCP servers that enable LLMs to interact with external services, covering design principles, implementation, and testing in Python or TypeScript",
+      "tags": [
+        "MCP",
+        "model-context-protocol",
+        "server",
+        "tool-integration",
+        "API"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "skill-creator",
+      "category": "ai-agent",
+      "path": "skills/ai-agent/skill-creator",
+      "description": "创建和更新 Claude Skill 的权威指南，涵盖 Skill 结构、编写最佳实践和工具集成",
+      "description_en": "Guide for creating effective Claude skills with specialized knowledge, workflows, or tool integrations; covers skill anatomy, frontmatter, and bundled resources",
+      "tags": [
+        "skill-creation",
+        "skill-authoring",
+        "claude",
+        "workflow"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "changelog-generator",
+      "category": "devops",
+      "path": "skills/devops/changelog-generator",
+      "description": "从 git 提交历史自动生成面向用户的 Changelog，将技术性提交转化为清晰的版本发布说明",
+      "description_en": "Automatically generate user-facing changelogs from git commit history, categorizing and translating technical commits into customer-friendly release notes",
+      "tags": [
+        "changelog",
+        "git",
+        "release-notes",
+        "versioning",
+        "devops"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "competitive-ads-extractor",
+      "category": "research",
+      "path": "skills/research/competitive-ads-extractor",
+      "description": "从 Facebook、LinkedIn 等广告库提取并分析竞品广告，识别有效的信息传达策略和创意模式",
+      "description_en": "Extract and analyze competitors' ads from ad libraries (Facebook, LinkedIn, etc.) to understand messaging, pain points, and creative patterns that are working",
+      "tags": [
+        "competitive-analysis",
+        "ads",
+        "facebook-ad-library",
+        "marketing",
+        "copywriting"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "canvas-design",
+      "category": "document",
+      "path": "skills/document/canvas-design",
+      "description": "创作美术馆级视觉设计作品，先生成设计哲学再表达为 PNG/PDF 艺术品，高度视觉化输出",
+      "description_en": "Create museum-quality visual art by first generating a design philosophy then expressing it visually as .png or .pdf files; 90% visual, 10% essential text",
+      "tags": [
+        "design",
+        "art",
+        "poster",
+        "visual",
+        "PDF",
+        "PNG",
+        "graphic-design"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "article-illustrator",
+      "category": "writing",
+      "path": "skills/writing/article-illustrator",
+      "description": "分析文章结构、识别配图位置，使用「类型 × 风格」两维度方法为文章生成一致性插图",
+      "description_en": "Analyze article structure, identify illustration positions, and generate images with consistent Type × Style (infographic/scene × minimal/watercolor) two-dimension approach",
+      "tags": [
+        "illustration",
+        "article",
+        "image-generation",
+        "配图",
+        "插图"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "infographic-generator",
+      "category": "writing",
+      "path": "skills/writing/infographic-generator",
+      "description": "专业信息图生成器，21种布局类型 × 20种视觉风格，生成适合发布的高质量信息图",
+      "description_en": "Professional infographic generator with 21 layout types and 20 visual styles; analyzes content and recommends optimal layout×style combinations for publication-ready output",
+      "tags": [
+        "infographic",
+        "visualization",
+        "信息图",
+        "可视化",
+        "图表"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "post-to-wechat",
+      "category": "social-media",
+      "path": "skills/social-media/post-to-wechat",
+      "description": "通过 API 或 Chrome CDP 发布内容到微信公众号，支持文章和图文两种形式",
+      "description_en": "Post content to WeChat Official Account via API or Chrome CDP; supports article posting with HTML/Markdown and image-text posting with multiple images",
+      "tags": [
+        "wechat",
+        "公众号",
+        "微信",
+        "发布",
+        "自动化"
+      ],
+      "complexity": "advanced",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": true,
+      "has_evals": false
+    },
+    {
+      "name": "post-to-x",
+      "category": "social-media",
+      "path": "skills/social-media/post-to-x",
+      "description": "通过真实 Chrome CDP 自动发布内容到 X (Twitter)，支持普通推文和 X Articles 长文",
+      "description_en": "Post content and articles to X (Twitter) using real Chrome CDP automation, supporting regular posts with media and X Articles long-form Markdown",
+      "tags": [
+        "twitter",
+        "X",
+        "tweet",
+        "social-media",
+        "automation",
+        "发推"
+      ],
+      "complexity": "advanced",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": true,
+      "has_evals": false
+    },
+    {
+      "name": "ai-humanizer",
+      "category": "writing",
+      "path": "skills/writing/ai-humanizer",
+      "description": "检测并去除 AI 写作痕迹，使用24种模式检测器和500+AI词汇列表，将文本改写为自然的人类写作风格",
+      "description_en": "Detect and remove AI writing patterns using 24 pattern detectors, 500+ AI vocabulary terms, and statistical analysis; rewrite text to sound natural and human",
+      "tags": [
+        "humanize",
+        "AI-writing",
+        "writing-quality",
+        "de-AI",
+        "natural-writing"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "agent-team-orchestration",
+      "category": "ai-agent",
+      "path": "skills/ai-agent/agent-team-orchestration",
+      "description": "多智能体团队编排，定义角色、任务生命周期、交接协议和质量门禁，支持2+智能体协作",
+      "description_en": "Production playbook for running multi-agent teams with defined roles, task lifecycle (inbox→spec→build→review→done), handoff protocols, and quality gates",
+      "tags": [
+        "multi-agent",
+        "orchestration",
+        "agent-team",
+        "workflow",
+        "handoff"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "brainstorming",
+      "category": "productivity",
+      "path": "skills/productivity/brainstorming",
+      "description": "将创意想法转化为完整设计方案，通过苏格拉底对话澄清需求，在实施前必须完成设计评审",
+      "description_en": "Turn ideas into fully-formed designs through collaborative dialogue; explores context, asks clarifying questions, proposes approaches, and requires design approval before any implementation",
+      "tags": [
+        "brainstorming",
+        "design",
+        "planning",
+        "requirements",
+        "ideation"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "copywriting",
+      "category": "writing",
+      "path": "skills/writing/copywriting",
+      "description": "专业营销文案写作，涵盖主页、落地页、定价页、功能页等，以转化为核心目标",
+      "description_en": "Expert conversion copywriting for homepages, landing pages, pricing pages, and feature pages; gathers audience, product, and context before writing",
+      "tags": [
+        "copywriting",
+        "marketing",
+        "conversion",
+        "landing-page",
+        "homepage",
+        "CTA"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "content-strategy",
+      "category": "writing",
+      "path": "skills/writing/content-strategy",
+      "description": "内容策略规划，帮助确定内容选题、主题集群和发布计划，以流量和潜在客户获取为目标",
+      "description_en": "Plan content strategies that drive traffic, build authority, and generate leads; identifies topic clusters, content gaps, and publication priorities",
+      "tags": [
+        "content-strategy",
+        "SEO",
+        "blog",
+        "content-planning",
+        "topic-clusters"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "code-review",
+      "category": "devops",
+      "path": "skills/devops/code-review",
+      "description": "系统性代码评审检查单，覆盖安全性、性能、可维护性、正确性和测试五个维度，含严重性分级",
+      "description_en": "Systematic code review covering security, performance, maintainability, correctness, and testing with severity levels and structured feedback guidance",
+      "tags": [
+        "code-review",
+        "PR-review",
+        "security",
+        "testing",
+        "quality"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "agent-memory",
+      "category": "ai-agent",
+      "path": "skills/ai-agent/agent-memory",
+      "description": "AI 智能体跨会话持久化记忆系统，支持事实存储、经验学习、实体追踪，使用本地 SQLite 数据库",
+      "description_en": "Persistent memory system for AI agents to remember facts, learn from experience, and track entities across sessions using a local SQLite database",
+      "tags": [
+        "agent",
+        "memory",
+        "persistence",
+        "SQLite",
+        "cross-session"
+      ],
+      "complexity": "advanced",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "market-research",
+      "category": "research",
+      "path": "skills/research/market-research",
+      "description": "市场调研、竞品分析、投资者尽调，生成带来源引用的决策导向研究报告",
+      "description_en": "Conduct market research, competitive analysis, and investor due diligence with source attribution; produces decision-oriented reports with market sizing and competitor comparisons",
+      "tags": [
+        "market-research",
+        "competitive-analysis",
+        "due-diligence",
+        "TAM",
+        "business-intelligence"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "tdd-workflow",
+      "category": "devops",
+      "path": "skills/devops/tdd-workflow",
+      "description": "测试驱动开发工作流，强制先写测试再实现，要求 80%+ 覆盖率，包含单元、集成、E2E 测试",
+      "description_en": "Enforce test-driven development with 80%+ coverage including unit, integration, and E2E tests; tests written before code for all new features and bug fixes",
+      "tags": [
+        "TDD",
+        "testing",
+        "unit-test",
+        "e2e",
+        "coverage",
+        "test-driven"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "content-engine",
+      "category": "social-media",
+      "path": "skills/social-media/content-engine",
+      "description": "平台原生内容创作引擎，支持 X、LinkedIn、TikTok、YouTube、Newsletter，将单一素材适配多平台",
+      "description_en": "Create platform-native content for X, LinkedIn, TikTok, YouTube, and newsletters; adapts one source asset into distinct formats for each platform",
+      "tags": [
+        "social-media",
+        "content",
+        "X",
+        "LinkedIn",
+        "TikTok",
+        "YouTube",
+        "repurpose"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    }
+  ]
+}

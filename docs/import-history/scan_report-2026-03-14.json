@@ -1,0 +1,157 @@
+{
+  "scanned_at": "2026-03-14T12:00:00Z",
+  "total_candidates": 8,
+  "candidates": [
+    {
+      "dir_name": "Agent-Reach",
+      "has_skill_md": true,
+      "frontmatter": {
+        "name": "agent-reach",
+        "description": "Give your AI agent eyes to see the entire internet. Read and search across Twitter/X, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu, RSS, and any web page — all from a single CLI."
+      },
+      "inferred_function": "统一多平台内容读取与搜索工具，支持 Twitter/X、Reddit、YouTube、GitHub、B站、小红书等9个平台",
+      "inferred_category": "devops",
+      "file_types": { ".py": 24, ".md": 13, ".svg": 3, ".png": 3, ".sh": 2 },
+      "languages": ["zh", "en"],
+      "total_files": 50,
+      "total_lines": 1136,
+      "quality_tier": "ready",
+      "quality_notes": "有完整合规 SKILL.md（frontmatter + 完整命令文档 + 配置说明），主目录 agent-reach/SKILL.md 符合规范，直接入库"
+    },
+    {
+      "dir_name": "Viral_Writer_Skill",
+      "has_skill_md": true,
+      "frontmatter": {
+        "name": "Viral Writer",
+        "description": "自媒体内容创作工具，支持微信公众号、小红书、抖音三种平台，基于11个内容洞见维度进行深度创作"
+      },
+      "inferred_function": "自媒体爆款内容创作，支持微信公众号/小红书/抖音，11维度深度创作框架",
+      "inferred_category": "writing",
+      "file_types": { ".md": 2 },
+      "languages": ["zh"],
+      "total_files": 2,
+      "total_lines": 415,
+      "quality_tier": "ready",
+      "quality_notes": "SKILL.md 内容极其完整（240行），有6步完整创作流程、11个洞见维度、平台规范和输出格式，name 字段非 kebab-case 已修正为 viral-writer"
+    },
+    {
+      "dir_name": "academic-research-skills",
+      "has_skill_md": true,
+      "frontmatter": {
+        "name": "（包含4个子 Skill）",
+        "description": "deep-research, academic-paper, academic-paper-reviewer, academic-pipeline"
+      },
+      "inferred_function": "完整学术研究套件，包含深度研究（13智能体）、学术论文写作（12智能体）、论文审阅（5视角）、全流程编排4个子 Skill",
+      "inferred_category": "research",
+      "file_types": { ".md": 121, ".pdf": 12, ".yml": 1, ".tex": 1 },
+      "languages": ["zh-TW", "en"],
+      "total_files": 137,
+      "total_lines": 33406,
+      "quality_tier": "ready",
+      "quality_notes": "4个子 Skill 均有完整 SKILL.md + references/ + agents/ + examples/ 结构，质量极高，已全部入库到 research/ 分类",
+      "sub_skills": [
+        "deep-research → skills/research/deep-research/",
+        "academic-paper → skills/research/academic-paper/",
+        "academic-paper-reviewer → skills/research/academic-paper-reviewer/",
+        "academic-pipeline → skills/research/academic-pipeline/"
+      ]
+    },
+    {
+      "dir_name": "awesome-claude-skills",
+      "has_skill_md": true,
+      "frontmatter": null,
+      "inferred_function": "大型 Claude Skill 集合，含 composio-skills（200+自动化集成）和约20个独立高质量 Skill",
+      "inferred_category": "mixed",
+      "file_types": { ".md": 892, ".xsd": 78, ".py": 62, ".ttf": 54, ".txt": 42 },
+      "languages": ["en"],
+      "total_files": 1141,
+      "total_lines": 21707,
+      "quality_tier": "needs-work",
+      "quality_notes": "composio-skills/ 子目录整体为 reference-only（200+ API 集成包装，无独立使用价值）。精选6个非 composio 高质量 Skill 入库：artifacts-builder（devops）、changelog-generator（devops）、competitive-ads-extractor（research）、canvas-design（document）、mcp-builder（devops）、skill-creator（devops）",
+      "selected_skills": [
+        "artifacts-builder → skills/devops/artifacts-builder/",
+        "changelog-generator → skills/devops/changelog-generator/",
+        "competitive-ads-extractor → skills/research/competitive-ads-extractor/",
+        "canvas-design → skills/document/canvas-design/",
+        "mcp-builder → skills/devops/mcp-builder/",
+        "skill-creator → skills/devops/skill-creator/"
+      ],
+      "skipped": "composio-skills/ 整体（200+ Skill）：为第三方 API 自动化集成包装，依赖 Composio 平台，不适合独立使用"
+    },
+    {
+      "dir_name": "awesome-openclaw-usecases",
+      "has_skill_md": false,
+      "frontmatter": null,
+      "inferred_function": "OpenClaw 平台用例展示集合，包含30+自动化场景描述（内容工厂、日报摘要、个人CRM等）",
+      "inferred_category": "other",
+      "file_types": { ".md": 33, ".yml": 1 },
+      "languages": ["en", "zh"],
+      "total_files": 35,
+      "total_lines": 2590,
+      "quality_tier": "reference-only",
+      "quality_notes": "用例集合，每个文件描述一个工作流场景（如 daily-reddit-digest、personal-crm），不是 Skill 格式，无 SKILL.md、无流程指令、无示例输入输出。仅作为创建新 Skill 的灵感参考"
+    },
+    {
+      "dir_name": "baoyu-skills",
+      "has_skill_md": true,
+      "frontmatter": null,
+      "inferred_function": "baoyu 自媒体内容生成 Skill 套件，包含文章配图、信息图、封面图、漫画、微信/X 发布等功能",
+      "inferred_category": "writing",
+      "file_types": { ".md": 212, ".webp": 124, ".ts": 100, ".css": 10, ".json": 6 },
+      "languages": ["zh", "en"],
+      "total_files": 458,
+      "total_lines": 24251,
+      "quality_tier": "needs-work",
+      "quality_notes": "包含16个子 Skill，均有 SKILL.md，质量参差不齐。所有 name 字段有 baoyu- 前缀需去除。精选4个最有独立价值的 Skill 入库，跳过依赖 Gemini Web 逆向 API 的重度内部依赖 Skill",
+      "selected_skills": [
+        "baoyu-article-illustrator → skills/writing/article-illustrator/",
+        "baoyu-infographic → skills/writing/infographic-generator/",
+        "baoyu-post-to-wechat → skills/social-media/post-to-wechat/",
+        "baoyu-post-to-x → skills/social-media/post-to-x/"
+      ],
+      "skipped": "baoyu-danger-gemini-web（逆向工程 Gemini API，风险性高）、baoyu-cover-image（重度依赖 gemini-web 内部脚本）、baoyu-comic（同上）、baoyu-slide-deck（同上）、baoyu-xhs-images（同上）等高依赖 Skill"
+    },
+    {
+      "dir_name": "everything-claude-code",
+      "has_skill_md": true,
+      "frontmatter": null,
+      "inferred_function": "Claude Code 生产级工具链集合，含 agents/skills/ 下约20个 SKILL.md 文件，涵盖研究、写作、编码、测试等领域",
+      "inferred_category": "devops",
+      "file_types": { ".md": 827, ".js": 84, ".yaml": 25, ".json": 20, ".ts": 15 },
+      "languages": ["en"],
+      "total_files": 1040,
+      "total_lines": 64627,
+      "quality_tier": "needs-work",
+      "quality_notes": "整体是 Claude Code 插件项目，非单一 Skill。在 .agents/skills/ 下有约20个独立 SKILL.md 文件值得提取。精选3个最通用的入库：deep-research（research）、content-engine（social-media）、market-research（research）、tdd-workflow（devops）",
+      "selected_skills": [
+        "deep-research → skills/research/market-research/ (注：与 academic-research-skills/deep-research 不同，侧重 web 搜索+MCP)",
+        "content-engine → skills/social-media/content-engine/",
+        "market-research → skills/research/market-research/",
+        "tdd-workflow → skills/devops/tdd-workflow/"
+      ]
+    },
+    {
+      "dir_name": "openclaw-master-skills",
+      "has_skill_md": true,
+      "frontmatter": null,
+      "inferred_function": "OpenClaw 平台主技能集，包含339个子 Skill 目录，涵盖开发、写作、研究、自动化、社交媒体等所有领域",
+      "inferred_category": "mixed",
+      "file_types": { ".md": 1858, ".py": 242, ".js": 138, ".json": 130, ".sh": 85 },
+      "languages": ["en", "zh", "ja"],
+      "total_files": 2601,
+      "total_lines": 35077,
+      "quality_tier": "needs-work",
+      "quality_notes": "339个子 Skill，质量参差不齐。精选8个最有独立使用价值、与已有 Skill 不重叠的技能入库：ai-humanizer（writing）、agent-team-orchestration（devops）、brainstorming（productivity）、copywriting（writing）、content-strategy（writing）、code-review（devops）、agent-memory（devops，需加 frontmatter）",
+      "selected_skills": [
+        "ai-humanizer → skills/writing/ai-humanizer/",
+        "agent-team-orchestration → skills/devops/agent-team-orchestration/",
+        "brainstorming → skills/productivity/brainstorming/",
+        "copywriting → skills/writing/copywriting/",
+        "content-strategy → skills/writing/content-strategy/",
+        "code-review → skills/devops/code-review/",
+        "agent-memory → skills/devops/agent-memory/ (已重写 SKILL.md 加 frontmatter)"
+      ],
+      "skipped": "330余个其他 Skill：含大量平台专属（1password、Apple Notes、Caldav、Bluebubbles 等）、高度依赖特定工具（composio、clawdhub）、质量偏低或与已入库 Skill 功能重叠的技能"
+    }
+  ]
+}
