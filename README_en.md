@@ -3,7 +3,7 @@
 **A structured, open-source collection of Claude Skills — 107 ready-to-use Skills covering AI agents, dev, writing, research, social media, and more.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-107-blue)](catalog.json)
+![Skills](https://img.shields.io/badge/Skills-107-blue)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [中文](README.md) · [日本語](README_ja.md) · [Contribute a Skill](CONTRIBUTING.md) · [Skill Spec](SKILL_SPEC.md)
@@ -125,6 +125,7 @@ Claude: (post-to-wechat skill activates) Sure, let me publish it...
 | [post-to-x](skills/social-media/post-to-x/) | Post tweets and X Articles via Chrome CDP automation |
 | [twitter-algorithm-optimizer](skills/social-media/twitter-algorithm-optimizer/) | Optimize tweets for maximum reach using Twitter's open-source algorithm insights |
 | [x-api](skills/social-media/x-api/) | X/Twitter API integration for posting, reading timelines, search, and analytics |
+| [xhs-images](skills/social-media/xhs-images/) | Generate XiaoHongShu image series: 10 visual styles × 8 layouts, 1–10 cartoon-style cards |
 
 ### 📄 Document (14)
 
@@ -248,26 +249,20 @@ See [SKILL_SPEC.md](SKILL_SPEC.md) for the full spec and [CONTRIBUTING.md](CONTR
 
 ```
 skill-atlas/
-├── CLAUDE.md              # Claude Code project instructions (auto-loaded)
 ├── SKILL_SPEC.md          # Skill authoring specification
 ├── CONTRIBUTING.md        # Contribution guide
-├── catalog.json           # Machine-readable skill index
-├── skills/                # All Skills (by category)
-│   ├── ai-agent/          # 🤖 AI & Agent tools
-│   ├── devops/            # ⚙️ DevOps
-│   ├── writing/           # ✍️ Writing
-│   ├── research/          # 🔬 Research
-│   ├── social-media/      # 📱 Social Media
-│   ├── document/          # 📄 Document
-│   ├── productivity/      # 🗂️ Productivity
-│   ├── recruitment/       # 🏢 Recruitment
-│   ├── knowledge-base/    # 📚 Knowledge Base
-│   └── language/          # 🌏 Language
-├── _templates/            # Skill templates (minimal/standard/with-evals)
-└── docs/                  # Documentation
+└── skills/                # All Skills (by category)
+    ├── ai-agent/          # 🤖 AI & Agent tools
+    ├── devops/            # ⚙️ DevOps
+    ├── writing/           # ✍️ Writing
+    ├── research/          # 🔬 Research
+    ├── social-media/      # 📱 Social Media
+    ├── document/          # 📄 Document
+    ├── productivity/      # 🗂️ Productivity
+    ├── recruitment/       # 🏢 Recruitment
+    ├── knowledge-base/    # 📚 Knowledge Base
+    └── language/          # 🌏 Language
 ```
-
-`catalog.json` is a machine-readable index. Claude Code reads it directly to search and manage Skills without scanning the entire directory.
 
 ---
 

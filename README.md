@@ -3,7 +3,7 @@
 **一个结构化的 Claude Skills 开源集合，107 个即用 Skill，覆盖 AI Agent、开发、写作、研究、社交媒体等场景。**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-107-blue)](catalog.json)
+![Skills](https://img.shields.io/badge/Skills-107-blue)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [English](README_en.md) · [日本語](README_ja.md) · [贡献 Skill](CONTRIBUTING.md) · [编写规范](SKILL_SPEC.md)
@@ -249,26 +249,20 @@ description: >
 
 ```
 skill-atlas/
-├── CLAUDE.md              # Claude Code 项目指令（AI 自动读取）
 ├── SKILL_SPEC.md          # Skill 编写规范
 ├── CONTRIBUTING.md        # 贡献指南
-├── catalog.json           # 机器可读索引
-├── skills/                # 所有 Skills（按分类）
-│   ├── ai-agent/          # 🤖 AI & Agent 工具
-│   ├── devops/            # ⚙️ 开发运维
-│   ├── writing/           # ✍️ 写作
-│   ├── research/          # 🔬 研究
-│   ├── social-media/      # 📱 社交媒体
-│   ├── document/          # 📄 文档
-│   ├── productivity/      # 🗂️ 效率工具
-│   ├── recruitment/       # 🏢 招聘
-│   ├── knowledge-base/    # 📚 知识库
-│   └── language/          # 🌏 语言
-├── _templates/            # Skill 创建模板（minimal/standard/with-evals）
-└── docs/                  # 使用文档
+└── skills/                # 所有 Skills（按分类）
+    ├── ai-agent/          # 🤖 AI & Agent 工具
+    ├── devops/            # ⚙️ 开发运维
+    ├── writing/           # ✍️ 写作
+    ├── research/          # 🔬 研究
+    ├── social-media/      # 📱 社交媒体
+    ├── document/          # 📄 文档
+    ├── productivity/      # 🗂️ 效率工具
+    ├── recruitment/       # 🏢 招聘
+    ├── knowledge-base/    # 📚 知识库
+    └── language/          # 🌏 语言
 ```
-
-`catalog.json` 是机器可读的 Skill 索引，Claude Code 可以直接读取它来检索和管理 Skills。
 
 ---
 

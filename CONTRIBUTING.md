@@ -9,8 +9,7 @@
 1. Fork 本仓库
 2. 在对应分类目录下创建 Skill 目录：`skills/<category>/<skill-name>/`
 3. 编写 `SKILL.md`（见下方格式要求）
-4. 更新 `catalog.json`（见下方字段说明）
-5. 提交 PR，标题格式：`feat(skill): add <skill-name>`
+4. 提交 PR，标题格式：`feat(skill): add <skill-name>`
 
 ---
 
@@ -52,29 +51,6 @@ description: >
 
 ---
 
-## catalog.json 更新
-
-在 `skills` 数组中追加一条记录：
-
-```json
-{
-  "name": "my-skill-name",
-  "category": "devops",
-  "path": "skills/devops/my-skill-name",
-  "description": "中文描述，一句话",
-  "description_en": "English description, one sentence",
-  "tags": ["tag1", "tag2"],
-  "complexity": "minimal",
-  "languages": ["zh", "en"],
-  "has_scripts": false,
-  "has_evals": false
-}
-```
-
-`complexity`：`minimal`（只有 SKILL.md）/ `standard`（有脚本或配置）/ `advanced`（有外部依赖）
-
----
-
 ## 分类选择
 
 | 分类 | 适合的 Skill |
@@ -101,7 +77,6 @@ description: >
 - [ ] 流程步骤是祈使句，具体可执行
 - [ ] 有至少一个真实感的 Input/Output 示例
 - [ ] SKILL.md 不超过 500 行
-- [ ] catalog.json 已更新
 - [ ] 基于真实使用场景（不是纯理论）
 
 ---
