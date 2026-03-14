@@ -1,5 +1,12 @@
-# 临时导入区，处理完毕后删除，不提交
+# 临时导入区和内部模板，不提交到公开仓库
 _inbox/
+_templates/
+
+# 导入过程记录（内部运营日志）
+docs/import-history/
+
+# Claude Code 内部工作流文档
+.claude/*.md
 
 # 操作系统
 .DS_Store
@@ -14,8 +21,16 @@ __pycache__/
 
 # Node
 node_modules/
+package-lock.json
+bun.lock
 
 # 编辑器
 .vscode/
 .idea/
 *.swp
+
+# Claude Code 本地配置（含个人权限规则，不提交）
+.claude/settings.local.json
+
+# Claude Code 内存系统（个人笔记，不提交）
+.claude/projects/
