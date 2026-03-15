@@ -6,7 +6,7 @@
 ![Skills](https://img.shields.io/badge/Skills-107-blue)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-[English](README_en.md) · [贡献 Skill](CONTRIBUTING.md) · [编写规范](SKILL_SPEC.md)
+[English](README_en.md) · [中文](README.md) · [日本語](README_ja.md) · [贡献 Skill](CONTRIBUTING.md) · [编写规范](SKILL_SPEC.md)
 
 ---
 
@@ -50,7 +50,7 @@ claude
 
 ### 🤖 AI & Agent (14)
 
-<details>
+<details open>
 <summary>展开查看</summary>
 
 | Skill | 说明 |
@@ -74,7 +74,7 @@ claude
 
 ### ⚙️ 开发运维 (29)
 
-<details>
+<details open>
 <summary>展开查看</summary>
 
 | Skill | 说明 |
@@ -113,7 +113,7 @@ claude
 
 ### ✍️ 写作 (16)
 
-<details>
+<details open>
 <summary>展开查看</summary>
 
 | Skill | 说明 |
@@ -139,7 +139,7 @@ claude
 
 ### 🔬 研究 (11)
 
-<details>
+<details open>
 <summary>展开查看</summary>
 
 | Skill | 说明 |
@@ -160,7 +160,7 @@ claude
 
 ### 📱 社交媒体 (7)
 
-<details>
+<details open>
 <summary>展开查看</summary>
 
 | Skill | 说明 |
@@ -177,7 +177,7 @@ claude
 
 ### 📄 文档 (14)
 
-<details>
+<details open>
 <summary>展开查看</summary>
 
 | Skill | 说明 |
@@ -201,7 +201,7 @@ claude
 
 ### 🗂️ 效率工具 (15)
 
-<details>
+<details open>
 <summary>展开查看</summary>
 
 | Skill | 说明 |

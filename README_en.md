@@ -6,7 +6,7 @@
 ![Skills](https://img.shields.io/badge/Skills-107-blue)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-[中文](README.md) · [Contribute a Skill](CONTRIBUTING.md) · [Skill Spec](SKILL_SPEC.md)
+[English](README_en.md) · [中文](README.md) · [日本語](README_ja.md) · [Contribute a Skill](CONTRIBUTING.md) · [Skill Spec](SKILL_SPEC.md)
 
 ---
 
@@ -50,7 +50,7 @@ claude
 
 ### 🤖 AI & Agent (14)
 
-<details>
+<details open>
 <summary>Show all</summary>
 
 | Skill | Description |
@@ -74,7 +74,7 @@ claude
 
 ### ⚙️ DevOps (29)
 
-<details>
+<details open>
 <summary>Show all</summary>
 
 | Skill | Description |
@@ -113,7 +113,7 @@ claude
 
 ### ✍️ Writing (16)
 
-<details>
+<details open>
 <summary>Show all</summary>
 
 | Skill | Description |
@@ -139,7 +139,7 @@ claude
 
 ### 🔬 Research (11)
 
-<details>
+<details open>
 <summary>Show all</summary>
 
 | Skill | Description |
@@ -160,7 +160,7 @@ claude
 
 ### 📱 Social Media (7)
 
-<details>
+<details open>
 <summary>Show all</summary>
 
 | Skill | Description |
@@ -177,7 +177,7 @@ claude
 
 ### 📄 Document (14)
 
-<details>
+<details open>
 <summary>Show all</summary>
 
 | Skill | Description |
@@ -201,7 +201,7 @@ claude
 
 ### 🗂️ Productivity (15)
 
-<details>
+<details open>
 <summary>Show all</summary>
 
 | Skill | Description |
