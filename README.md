@@ -1,31 +1,60 @@
 # Skill Atlas
 
-**一个结构化的 Claude Skills 开源集合，107 个即用 Skill，覆盖 AI Agent、开发、写作、研究、社交媒体等场景。**
+**107 个即用 Claude Skills，覆盖 AI Agent、开发、写作、研究、社交媒体等场景。**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 ![Skills](https://img.shields.io/badge/Skills-107-blue)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-[English](README_en.md) · [日本語](README_ja.md) · [贡献 Skill](CONTRIBUTING.md) · [编写规范](SKILL_SPEC.md)
+[English](README_en.md) · [贡献 Skill](CONTRIBUTING.md) · [编写规范](SKILL_SPEC.md)
 
 ---
 
 ## 什么是 Claude Skill？
 
-Skill 是一份写给 Claude 的结构化指令文件（`SKILL.md`），告诉它在特定场景下该怎么做。安装后 Claude 会**自动识别**何时该用哪个 Skill，不需要你手动触发。
+Skill 是一份写给 Claude 的结构化指令文件（`SKILL.md`），告诉它在特定场景下该怎么做。安装后 Claude 会**自动识别**何时该用哪个 Skill，不需要手动触发。
 
-```
-你：帮我把这段文章发布到微信公众号
-Claude：（自动激活 post-to-wechat skill）好的，我来帮你发布...
+**这个仓库做什么**：收集、整理并维护高质量的 Skill 文件，直接复制使用，无需从零编写。
+
+---
+
+## 快速开始
+
+**Claude Code**（推荐）：
+
+```bash
+# 复制到用户目录，所有项目都能用
+cp -r skills/devops/code-review ~/.claude/skills/
+
+# 重启后自动加载
+claude
 ```
 
-**这个仓库做什么**：收集、整理并维护高质量的 Skill 文件，让你直接复制使用，无需从零编写。
+**Claude.ai**：打开任意 Skill 目录 → 下载 `SKILL.md` → 在对话中点击 🧩 上传。
+
+**API**：将 `SKILL.md` 内容作为 `system` prompt 传入即可。
 
 ---
 
 ## Skills 列表
 
+| 分类 | 数量 | 包含内容 |
+|------|------|----------|
+| [🤖 AI & Agent](#-ai--agent-14) | 14 | MCP 服务器、RAG、多 Agent 编排、Prompt 工程、评估框架 |
+| [⚙️ 开发运维](#️-开发运维-29) | 29 | 代码审查、架构模式、测试、Docker、数据库、前后端框架 |
+| [✍️ 写作](#️-写作-16) | 16 | 长文创作、文案、内容策略、营销心理学、融资材料 |
+| [🔬 研究](#-研究-11) | 11 | 学术论文、深度调研、市场分析、数据分析、SEO |
+| [📱 社交媒体](#-社交媒体-7) | 7 | X/Twitter、微信、小红书、LinkedIn、多平台分发 |
+| [📄 文档](#-文档-14) | 14 | 幻灯片、PDF、图片生成、算法艺术、主题设计 |
+| [🗂️ 效率工具](#️-效率工具-15) | 15 | 文件整理、图片处理、视频下载、会议分析、抽奖 |
+| [🏢 招聘](#-招聘-1) | 1 | 定制化简历生成 |
+
+---
+
 ### 🤖 AI & Agent (14)
+
+<details>
+<summary>展开查看全部</summary>
 
 | Skill | 说明 |
 |-------|------|
@@ -44,41 +73,55 @@ Claude：（自动激活 post-to-wechat skill）好的，我来帮你发布...
 | [skill-creator](skills/ai-agent/skill-creator/) | 创建和更新 Claude Skill 的权威指南 |
 | [subagent-driven-development](skills/ai-agent/subagent-driven-development/) | 子 Agent 并行执行实现计划，适用于独立任务的并发推进 |
 
+</details>
+
+---
+
 ### ⚙️ 开发运维 (29)
+
+<details>
+<summary>展开查看全部</summary>
 
 | Skill | 说明 |
 |-------|------|
 | [api-design-principles](skills/devops/api-design-principles/) | REST 和 GraphQL API 设计原则，构建直观、可扩展、可维护的接口 |
 | [architecture-patterns](skills/devops/architecture-patterns/) | 清洁架构、六边形架构、DDD 等经典后端架构模式实践指南 |
 | [artifacts-builder](skills/devops/artifacts-builder/) | 构建复杂多组件 claude.ai HTML Artifact（React + shadcn/ui） |
+| [backend-patterns](skills/devops/backend-patterns/) | Node.js/Express/Next.js 后端架构模式：中间件、认证、数据库集成 |
 | [changelog-generator](skills/devops/changelog-generator/) | 从 git 提交历史自动生成面向用户的版本说明 |
 | [clean-content-fetch](skills/devops/clean-content-fetch/) | 动态网页正文提取（含微信公众号），基于 Scrapling，解决普通 fetch 噪音问题 |
 | [code-review](skills/devops/code-review/) | 系统性代码评审，覆盖安全性、性能、可维护性、正确性、测试五个维度 |
+| [coding-standards](skills/devops/coding-standards/) | TypeScript/JS/React/Node.js 通用编码规范和最佳实践 |
 | [computer-use](skills/devops/computer-use/) | 无头 Linux 服务器全桌面自动化，X11 级别操控，支持 17 种操作 + VNC |
 | [debug-pro](skills/devops/debug-pro/) | 系统化调试方法论，含 JS/TS/Python/Swift/CSS/网络层调试命令速查 |
 | [docker-essentials](skills/devops/docker-essentials/) | Docker 核心命令与工作流：容器管理、镜像操作、网络、卷和调试 |
 | [e2e-testing](skills/devops/e2e-testing/) | Playwright E2E 测试模式：Page Object Model、CI/CD 集成、不稳定测试处理 |
 | [frontend-patterns](skills/devops/frontend-patterns/) | React/Next.js 前端架构模式、状态管理和性能优化最佳实践 |
+| [git-essentials](skills/devops/git-essentials/) | Git 核心命令与工作流：分支/合并/变基/团队协作 |
 | [microservices-patterns](skills/devops/microservices-patterns/) | 微服务架构设计：服务边界划分、事件驱动通信、弹性模式 |
 | [modern-javascript-patterns](skills/devops/modern-javascript-patterns/) | ES6+ 现代 JavaScript 完整指南：async/await、模块、迭代器、函数式编程等 |
 | [nextjs-app-router-patterns](skills/devops/nextjs-app-router-patterns/) | Next.js 14+ App Router 完整指南：Server Components、流式渲染、并行路由 |
 | [postgresql-table-design](skills/devops/postgresql-table-design/) | PostgreSQL 表设计最佳实践：数据类型、索引策略、约束、性能优化 |
-| [security-auditor](skills/devops/security-auditor/) | 代码安全审计，覆盖 OWASP Top 10、认证流程、XSS/SQL 注入防护 |
-| [tdd-workflow](skills/devops/tdd-workflow/) | 测试驱动开发工作流，强制先写测试再实现，要求 80%+ 覆盖率 |
-| [backend-patterns](skills/devops/backend-patterns/) | Node.js/Express/Next.js 后端架构模式：中间件、认证、数据库集成 |
-| [coding-standards](skills/devops/coding-standards/) | TypeScript/JS/React/Node.js 通用编码规范和最佳实践 |
-| [git-essentials](skills/devops/git-essentials/) | Git 核心命令与工作流：分支/合并/变基/团队协作 |
 | [python-design-patterns](skills/devops/python-design-patterns/) | Python 设计模式：KISS/SRP/组合优于继承 |
 | [python-performance-optimization](skills/devops/python-performance-optimization/) | Python 性能优化：cProfile/内存分析/瓶颈识别 |
 | [python-testing-patterns](skills/devops/python-testing-patterns/) | Python 全面测试：pytest/fixtures/mocking/TDD |
 | [react-state-management](skills/devops/react-state-management/) | 现代 React 状态管理：Redux Toolkit/Zustand/Jotai/React Query |
+| [security-auditor](skills/devops/security-auditor/) | 代码安全审计，覆盖 OWASP Top 10、认证流程、XSS/SQL 注入防护 |
 | [sql-toolkit](skills/devops/sql-toolkit/) | SQL 全栈：SQLite/PostgreSQL/MySQL 查询设计迁移优化，无需 ORM |
+| [tdd-workflow](skills/devops/tdd-workflow/) | 测试驱动开发工作流，强制先写测试再实现，要求 80%+ 覆盖率 |
 | [typescript-advanced-types](skills/devops/typescript-advanced-types/) | TypeScript 高级类型：泛型/条件类型/映射类型/模板字面量 |
 | [using-git-worktrees](skills/devops/using-git-worktrees/) | Git Worktree 隔离工作区：功能开发时创建安全隔离环境 |
 | [vue-best-practices](skills/devops/vue-best-practices/) | Vue 3 最佳实践：Composition API + TypeScript + Pinia + Router |
 | [webapp-testing](skills/devops/webapp-testing/) | 基于 Playwright 的 Web 应用测试工具包，支持截图和浏览器日志 |
 
+</details>
+
+---
+
 ### ✍️ 写作 (16)
+
+<details>
+<summary>展开查看全部</summary>
 
 | Skill | 说明 |
 |-------|------|
@@ -99,7 +142,14 @@ Claude：（自动激活 post-to-wechat skill）好的，我来帮你发布...
 | [pricing-strategy](skills/writing/pricing-strategy/) | 定价策略：分层定价/免费增值/Van Westendorp/价值指标 |
 | [viral-writer](skills/writing/viral-writer/) | 自媒体爆款内容创作，支持微信公众号、小红书、抖音 |
 
+</details>
+
+---
+
 ### 🔬 研究 (11)
+
+<details>
+<summary>展开查看全部</summary>
 
 | Skill | 说明 |
 |-------|------|
@@ -109,13 +159,20 @@ Claude：（自动激活 post-to-wechat skill）好的，我来帮你发布...
 | [competitive-ads-extractor](skills/research/competitive-ads-extractor/) | 从广告库提取并分析竞品广告，识别有效的信息传达策略 |
 | [data-analysis](skills/research/data-analysis/) | 统计严谨性数据分析，支持 A/B 测试、队列分析、假设检验等 |
 | [deep-research](skills/research/deep-research/) | 13 Agent 学术深度研究，支持 7 种研究模式 |
+| [deep-research-pro](skills/research/deep-research-pro/) | 多源深度研究 Agent：搜索网络/综合信息/生成引用报告，无需 API Key |
 | [lead-research-assistant](skills/research/lead-research-assistant/) | 识别高质量销售线索，分析目标公司并提供可操作的联系策略 |
 | [market-research](skills/research/market-research/) | 市场调研、竞品分析、投资者尽调，生成带来源引用的决策报告 |
 | [programmatic-seo](skills/research/programmatic-seo/) | 程序化 SEO：用模板和数据批量创建 SEO 优化页面（目录页/地区页/比较页等） |
-| [deep-research-pro](skills/research/deep-research-pro/) | 多源深度研究 Agent：搜索网络/综合信息/生成引用报告，无需 API Key |
 | [seo-audit](skills/research/seo-audit/) | SEO 问题诊断与审计，覆盖技术 SEO、页面优化、元标签审查 |
 
+</details>
+
+---
+
 ### 📱 社交媒体 (7)
+
+<details>
+<summary>展开查看全部</summary>
 
 | Skill | 说明 |
 |-------|------|
@@ -127,26 +184,40 @@ Claude：（自动激活 post-to-wechat skill）好的，我来帮你发布...
 | [x-api](skills/social-media/x-api/) | X/Twitter API 程序化集成：发推、读取时间线、搜索、数据分析 |
 | [xhs-images](skills/social-media/xhs-images/) | 小红书信息图系列：10种视觉风格×8种布局，生成1-10张卡通风格图片 |
 
+</details>
+
+---
+
 ### 📄 文档 (14)
+
+<details>
+<summary>展开查看全部</summary>
 
 | Skill | 说明 |
 |-------|------|
 | [algorithmic-art](skills/document/algorithmic-art/) | 使用 p5.js 创作算法生成艺术，支持流场、粒子系统、交互式参数探索 |
 | [brand-guidelines](skills/document/brand-guidelines/) | Anthropic 官方品牌色彩和字体规范，用于 Artifact 视觉风格统一 |
 | [canvas-design](skills/document/canvas-design/) | 创作视觉设计作品，先生成设计哲学再输出为 PNG/PDF |
+| [comic-creator](skills/document/comic-creator/) | 知识漫画创作，多画风×基调组合，生成带分镜的教育漫画 |
+| [cover-image](skills/document/cover-image/) | 文章封面图生成，5维度定制，支持电影宽屏/16:9/正方形 |
 | [docx](skills/document/docx/) | 全功能 .docx 文档创建、编辑与分析，支持追踪更改和批注 |
 | [fal-ai-media](skills/document/fal-ai-media/) | 通过 fal.ai MCP 生成图像、视频和音频（需配置 fal.ai MCP） |
 | [frontend-slides](skills/document/frontend-slides/) | 从零创建动画丰富的 HTML 演示幻灯片，或将 PPTX 转换为 Web 形式 |
+| [image-gen](skills/document/image-gen/) | AI 图片生成，支持 OpenAI/Google/DashScope/Replicate 官方 API |
 | [markdown-to-html](skills/document/markdown-to-html/) | Markdown 转微信兼容 HTML，含代码高亮、数学公式、PlantUML |
 | [pdf](skills/document/pdf/) | PDF 全功能处理：文本提取、新建、合并/拆分文档、表单填写 |
-| [comic-creator](skills/document/comic-creator/) | 知识漫画创作，多画风×基调组合，生成带分镜的教育漫画 |
-| [cover-image](skills/document/cover-image/) | 文章封面图生成，5维度定制，支持电影宽屏/16:9/正方形 |
-| [image-gen](skills/document/image-gen/) | AI 图片生成，支持 OpenAI/Google/DashScope/Replicate 官方 API |
 | [slide-deck](skills/document/slide-deck/) | 内容转专业幻灯片图组：规划大纲并逐页生成设计图片 |
 | [slidev](skills/document/slidev/) | 面向开发者的 Markdown 幻灯片：Vue 组件/代码高亮/动画互动 |
 | [theme-factory](skills/document/theme-factory/) | 为任意 Artifact 应用一致的专业主题，含 10 套预设主题 |
 
+</details>
+
+---
+
 ### 🗂️ 效率工具 (15)
+
+<details>
+<summary>展开查看全部</summary>
 
 | Skill | 说明 |
 |-------|------|
@@ -158,13 +229,17 @@ Claude：（自动激活 post-to-wechat skill）好的，我来帮你发布...
 | [invoice-organizer](skills/productivity/invoice-organizer/) | 自动整理发票和收据以备税务申报，提取信息并统一归档 |
 | [meeting-insights-analyzer](skills/productivity/meeting-insights-analyzer/) | 分析会议记录，识别沟通行为模式，提供领导力改进建议 |
 | [raffle-winner-picker](skills/productivity/raffle-winner-picker/) | 从列表或 Google Sheets 中公平随机抽取获奖者 |
+| [readgzh](skills/productivity/readgzh/) | AI 阅读完整微信公众号文章，支持普通图文，通过 ReadGZH 服务 |
 | [slack-gif-creator](skills/productivity/slack-gif-creator/) | 创作适配 Slack 的动态 GIF，支持消息 GIF 和 Emoji GIF |
 | [url-to-markdown](skills/productivity/url-to-markdown/) | 通过 Chrome CDP 抓取任意网页并转换为 Markdown |
 | [video-downloader](skills/productivity/video-downloader/) | 使用 yt-dlp 下载 YouTube 视频，支持多种质量和格式 |
-| [readgzh](skills/productivity/readgzh/) | AI 阅读完整微信公众号文章，支持普通图文，通过 ReadGZH 服务 |
 | [video-editing](skills/productivity/video-editing/) | AI 辅助视频编辑全流程：FFmpeg 剪辑、Remotion 动画、ElevenLabs 配音 |
 | [x-to-markdown](skills/productivity/x-to-markdown/) | X/Twitter 推文和长文转 Markdown（需用户授权，使用逆向 API） |
 | [youtube-transcript](skills/productivity/youtube-transcript/) | 获取 YouTube 视频字幕/转录并生成摘要 |
+
+</details>
+
+---
 
 ### 🏢 招聘 (1)
 
@@ -174,54 +249,13 @@ Claude：（自动激活 post-to-wechat skill）好的，我来帮你发布...
 
 > 📚 知识库 · 🌏 语言 分类即将上线，欢迎贡献。
 
-**总计：107 个 Skill（跨 8 个分类）**
-
----
-
-## 如何使用
-
-### 在 Claude Code 中使用
-
-```bash
-# 复制 Skill 到用户目录，所有项目都能用
-cp -r skills/devops/agent-reach ~/.claude/skills/
-
-# 重启 Claude Code，Skill 自动加载
-claude
-```
-
-当你的请求符合 Skill 的触发场景，Claude 会自动激活。也可以用 `/skill-name` 手动调用。
-
-### 在 Claude.ai 中使用
-
-1. 打开任意 Skill 目录，下载 `SKILL.md`
-2. 在 Claude.ai 中点击技能图标 🧩 → 上传文件
-3. Skill 激活，后续对话自动应用
-
-### 通过 API 使用
-
-```python
-import anthropic
-
-client = anthropic.Anthropic()
-
-with open("skills/devops/agent-reach/SKILL.md") as f:
-    skill = f.read()
-
-response = client.messages.create(
-    model="claude-opus-4-6",
-    system=skill,
-    messages=[{"role": "user", "content": "搜索 Reddit 上关于 Claude Code 的讨论"}]
-)
-```
-
 ---
 
 ## 如何贡献
 
-**最简单的方式**：直接提 PR，添加你用过的、觉得好用的 Skill。
+**最简单的方式**：提 PR，添加你用过的、觉得好用的 Skill。
 
-Skill 只需要一个 `SKILL.md` 文件，格式如下：
+一个 Skill 只需要一个 `SKILL.md` 文件：
 
 ```yaml
 ---
@@ -245,30 +279,7 @@ description: >
 
 ---
 
-## 项目结构
-
-```
-skill-atlas/
-├── SKILL_SPEC.md          # Skill 编写规范
-├── CONTRIBUTING.md        # 贡献指南
-└── skills/                # 所有 Skills（按分类）
-    ├── ai-agent/          # 🤖 AI & Agent 工具
-    ├── devops/            # ⚙️ 开发运维
-    ├── writing/           # ✍️ 写作
-    ├── research/          # 🔬 研究
-    ├── social-media/      # 📱 社交媒体
-    ├── document/          # 📄 文档
-    ├── productivity/      # 🗂️ 效率工具
-    ├── recruitment/       # 🏢 招聘
-    ├── knowledge-base/    # 📚 知识库
-    └── language/          # 🌏 语言
-```
-
----
-
 ## 致谢
-
-本仓库收录的 Skills 部分来自以下开源仓库，感谢原作者的贡献：
 
 | 来源仓库 | 收录的 Skills |
 |---------|--------------|
@@ -281,7 +292,5 @@ skill-atlas/
 | [LeoYeAI/openclaw-master-skills](https://github.com/LeoYeAI/openclaw-master-skills) | ai-humanizer, agent-team-orchestration, brainstorming, copywriting, content-strategy, code-review, agent-memory 等 |
 
 ---
-
-## License
 
 MIT © 2026 Contributors
