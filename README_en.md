@@ -1,9 +1,9 @@
 # Skill Atlas
 
-**107 ready-to-use Claude Skills covering AI agents, dev, writing, research, social media, and more.**
+**108 ready-to-use Claude Skills covering AI agents, dev, writing, research, social media, and more.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-![Skills](https://img.shields.io/badge/Skills-107-blue)
+![Skills](https://img.shields.io/badge/Skills-108-blue)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [English](README_en.md) · [中文](README.md) · [日本語](README_ja.md) · [Contribute a Skill](CONTRIBUTING.md) · [Skill Spec](SKILL_SPEC.md)
@@ -67,7 +67,7 @@ Claude will automatically call `search_skills` → `get_skill` to load the right
 | [⚙️ DevOps](#️-devops-29) | 29 | Code review, architecture, testing, Docker, databases, frontend/backend frameworks |
 | [✍️ Writing](#️-writing-16) | 16 | Long-form content, copywriting, content strategy, marketing psychology, fundraising |
 | [🔬 Research](#-research-11) | 11 | Academic papers, deep research, market analysis, data analysis, SEO |
-| [📱 Social Media](#-social-media-7) | 7 | X/Twitter, WeChat, XiaoHongShu, LinkedIn, multi-platform distribution |
+| [📱 Social Media](#-social-media-8) | 8 | X/Twitter, WeChat, XiaoHongShu, LinkedIn, multi-platform distribution, content collection |
 | [📄 Document](#-document-14) | 14 | Slides, PDF, image generation, generative art, theme design |
 | [🗂️ Productivity](#️-productivity-15) | 15 | File organization, image processing, video download, meeting analysis, raffle |
 | [🏢 Recruitment](#-recruitment-1) | 1 | Tailored resume generation |
@@ -184,7 +184,7 @@ Claude will automatically call `search_skills` → `get_skill` to load the right
 
 </details>
 
-### 📱 Social Media (7)
+### 📱 Social Media (8)
 
 <details open>
 <summary>Show all</summary>
@@ -198,6 +198,7 @@ Claude will automatically call `search_skills` → `get_skill` to load the right
 | [twitter-algorithm-optimizer](skills/social-media/twitter-algorithm-optimizer/) | Optimize tweets for maximum reach using Twitter's open-source algorithm insights |
 | [x-api](skills/social-media/x-api/) | X/Twitter API integration for posting, reading timelines, search, and analytics |
 | [xhs-images](skills/social-media/xhs-images/) | Generate XiaoHongShu image series: 10 visual styles × 8 layouts, 1–10 cartoon-style cards |
+| [content-collector](skills/social-media/content-collector/) | Auto-collect content from X/Twitter, Jike, WeChat, Reddit, etc. and organize it into Feishu databases with AI summarization |
 
 </details>
 

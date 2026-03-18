@@ -1,0 +1,2708 @@
+{
+  "version": "1.0",
+  "updated_at": "2026-03-18",
+  "categories": [
+    {
+      "id": "ai-agent",
+      "label": "🤖 AI & Agent",
+      "label_en": "AI & Agent"
+    },
+    {
+      "id": "devops",
+      "label": "⚙️ 开发运维",
+      "label_en": "DevOps"
+    },
+    {
+      "id": "writing",
+      "label": "✍️ 写作",
+      "label_en": "Writing"
+    },
+    {
+      "id": "research",
+      "label": "🔬 研究",
+      "label_en": "Research"
+    },
+    {
+      "id": "social-media",
+      "label": "📱 社交媒体",
+      "label_en": "Social Media"
+    },
+    {
+      "id": "document",
+      "label": "📄 文档",
+      "label_en": "Document"
+    },
+    {
+      "id": "productivity",
+      "label": "🗂️ 效率工具",
+      "label_en": "Productivity"
+    },
+    {
+      "id": "recruitment",
+      "label": "🏢 招聘",
+      "label_en": "Recruitment"
+    },
+    {
+      "id": "knowledge-base",
+      "label": "📚 知识库",
+      "label_en": "Knowledge Base"
+    },
+    {
+      "id": "language",
+      "label": "🌏 语言",
+      "label_en": "Language"
+    }
+  ],
+  "skills": [
+    {
+      "name": "rag-implementation",
+      "category": "ai-agent",
+      "path": "skills/ai-agent/rag-implementation",
+      "description": "构建 RAG（检索增强生成）系统：向量数据库集成、语义搜索、文档问答，适用于知识驱动的 AI 应用",
+      "description_en": "Build RAG systems for LLM applications with vector databases and semantic search; covers document Q&A systems and knowledge-grounded AI integration",
+      "tags": [
+        "RAG",
+        "vector-database",
+        "semantic-search",
+        "LLM",
+        "knowledge-base",
+        "embeddings"
+      ],
+      "complexity": "advanced",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "prompt-engineering-patterns",
+      "category": "ai-agent",
+      "path": "skills/ai-agent/prompt-engineering-patterns",
+      "description": "生产级提示工程高级技巧：提高 LLM 性能、可靠性和可控性的系统化方法和模板",
+      "description_en": "Master advanced prompt engineering techniques to maximize LLM performance, reliability, and controllability in production; covers systematic optimization and template design",
+      "tags": [
+        "prompt-engineering",
+        "LLM",
+        "production",
+        "optimization",
+        "chain-of-thought"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "subagent-driven-development",
+      "category": "ai-agent",
+      "path": "skills/ai-agent/subagent-driven-development",
+      "description": "子 Agent 并行执行实现计划，适用于当前会话中有独立任务需要同步推进时",
+      "description_en": "Execute implementation plans with parallel subagents for independent tasks within the current session; patterns for coordinating concurrent agent work",
+      "tags": [
+        "subagent",
+        "parallel",
+        "multi-agent",
+        "implementation",
+        "orchestration"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "claude-api",
+      "category": "ai-agent",
+      "path": "skills/ai-agent/claude-api",
+      "description": "Anthropic Claude API / SDK 完整模式，覆盖 Messages API、流式输出、工具使用、视觉、扩展思考、批处理、提示缓存和 Agent SDK",
+      "description_en": "Comprehensive Claude API patterns for Python and TypeScript covering Messages API, streaming, tool use, vision, extended thinking, batches, prompt caching, and Claude Agent SDK",
+      "tags": [
+        "claude-api",
+        "anthropic",
+        "SDK",
+        "tool-use",
+        "streaming",
+        "agents"
+      ],
+      "complexity": "advanced",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "eval-harness",
+      "category": "ai-agent",
+      "path": "skills/ai-agent/eval-harness",
+      "description": "Claude Code 会话的正式评估框架，实现评估驱动开发（EDD）原则",
+      "description_en": "Formal evaluation harness for Claude Code sessions implementing eval-driven development (EDD) principles with structured test-run-evaluate cycles",
+      "tags": [
+        "evaluation",
+        "EDD",
+        "testing",
+        "agent",
+        "quality",
+        "benchmark"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "exa-search",
+      "category": "ai-agent",
+      "path": "skills/ai-agent/exa-search",
+      "description": "通过 Exa MCP 进行神经语义搜索，支持 Web、代码、公司调研、人物查找等，需配置 Exa MCP",
+      "description_en": "Neural search via Exa MCP for web pages, code examples, company research, and people lookup; requires Exa MCP configured",
+      "tags": [
+        "search",
+        "exa",
+        "MCP",
+        "web-search",
+        "neural-search",
+        "research"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "developer-growth-analysis",
+      "category": "ai-agent",
+      "path": "skills/ai-agent/developer-growth-analysis",
+      "description": "分析 Claude Code 聊天历史识别编码模式和成长差距，从 HackerNews 策划学习资源并推送到 Slack",
+      "description_en": "Analyze recent Claude Code chat history to identify coding patterns and improvement areas; curates HackerNews resources and sends personalized growth reports to Slack DMs",
+      "tags": [
+        "developer-growth",
+        "coding-patterns",
+        "learning",
+        "HackerNews",
+        "Slack",
+        "self-improvement"
+      ],
+      "complexity": "advanced",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "agentic-eval",
+      "category": "ai-agent",
+      "path": "skills/ai-agent/agentic-eval",
+      "description": "AI 智能体输出评估与质量提升模式，包含自我批评循环、评估-优化流水线、基于评分标准的 LLM 评判系统",
+      "description_en": "Patterns for evaluating and improving AI agent outputs via self-critique loops, evaluator-optimizer pipelines, and rubric-based LLM-as-judge evaluation systems",
+      "tags": [
+        "evaluation",
+        "agent",
+        "self-critique",
+        "LLM-as-judge",
+        "quality",
+        "optimizer"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "langsmith-fetch",
+      "category": "ai-agent",
+      "path": "skills/ai-agent/langsmith-fetch",
+      "description": "从 LangSmith Studio 获取 LangChain/LangGraph 执行追踪，调试智能体行为、工具调用和记忆操作",
+      "description_en": "Debug LangChain and LangGraph agents by fetching execution traces from LangSmith Studio; analyze tool calls, memory operations, and agent performance patterns",
+      "tags": [
+        "langchain",
+        "langgraph",
+        "langsmith",
+        "tracing",
+        "debug",
+        "agent"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "backend-patterns",
+      "category": "devops",
+      "path": "skills/devops/backend-patterns",
+      "description": "Node.js/Express/Next.js API 路由后端架构模式：中间件、错误处理、认证、数据库集成最佳实践",
+      "description_en": "Backend architecture patterns for Node.js, Express, and Next.js API routes covering middleware, error handling, authentication, and database integration best practices",
+      "tags": [
+        "nodejs",
+        "express",
+        "backend",
+        "API",
+        "middleware",
+        "database"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "coding-standards",
+      "category": "devops",
+      "path": "skills/devops/coding-standards",
+      "description": "TypeScript/JavaScript/React/Node.js 通用编码规范和最佳实践，适用于所有项目",
+      "description_en": "Universal coding standards and best practices for TypeScript, JavaScript, React, and Node.js development applicable across all projects",
+      "tags": [
+        "coding-standards",
+        "typescript",
+        "javascript",
+        "react",
+        "best-practices"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "python-design-patterns",
+      "category": "devops",
+      "path": "skills/devops/python-design-patterns",
+      "description": "Python 设计模式：KISS/SRP/组合优于继承/关注点分离，用于架构决策和代码结构优化",
+      "description_en": "Python design patterns including KISS, SRP, composition over inheritance, and separation of concerns for architecture decisions and code refactoring",
+      "tags": [
+        "python",
+        "design-patterns",
+        "architecture",
+        "refactoring",
+        "SOLID"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "python-performance-optimization",
+      "category": "devops",
+      "path": "skills/devops/python-performance-optimization",
+      "description": "Python 性能优化：cProfile/内存分析器/性能最佳实践，用于调试慢代码和优化瓶颈",
+      "description_en": "Profile and optimize Python code using cProfile, memory profilers, and performance best practices; covers bottleneck identification and optimization strategies",
+      "tags": [
+        "python",
+        "performance",
+        "profiling",
+        "optimization",
+        "cProfile",
+        "memory"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "python-testing-patterns",
+      "category": "devops",
+      "path": "skills/devops/python-testing-patterns",
+      "description": "Python 全面测试策略：pytest/fixtures/mocking/TDD，用于编写测试套件和实现测试驱动开发",
+      "description_en": "Implement comprehensive Python testing with pytest, fixtures, mocking, and TDD; covers test suite setup, parametrization, and integration testing patterns",
+      "tags": [
+        "python",
+        "pytest",
+        "testing",
+        "TDD",
+        "mocking",
+        "fixtures"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "react-state-management",
+      "category": "devops",
+      "path": "skills/devops/react-state-management",
+      "description": "现代 React 状态管理：Redux Toolkit/Zustand/Jotai/React Query，涵盖全局状态和服务端状态",
+      "description_en": "Master modern React state management with Redux Toolkit, Zustand, Jotai, and React Query; covers global state, server state, and choosing between solutions",
+      "tags": [
+        "react",
+        "state-management",
+        "redux",
+        "zustand",
+        "react-query",
+        "jotai"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "typescript-advanced-types",
+      "category": "devops",
+      "path": "skills/devops/typescript-advanced-types",
+      "description": "TypeScript 高级类型系统：泛型/条件类型/映射类型/模板字面量/工具类型，构建类型安全应用",
+      "description_en": "Master TypeScript's advanced type system including generics, conditional types, mapped types, template literals, and utility types for type-safe applications",
+      "tags": [
+        "typescript",
+        "generics",
+        "conditional-types",
+        "mapped-types",
+        "type-safety"
+      ],
+      "complexity": "advanced",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "sql-toolkit",
+      "category": "devops",
+      "path": "skills/devops/sql-toolkit",
+      "description": "SQL 全栈工具包：查询/设计/迁移/优化，支持 SQLite/PostgreSQL/MySQL，无需 ORM",
+      "description_en": "Query, design, migrate, and optimize SQL databases using SQLite, PostgreSQL, or MySQL; covers schema design, migrations, indexing, backup/restore, and slow query debugging without ORMs",
+      "tags": [
+        "SQL",
+        "database",
+        "postgresql",
+        "mysql",
+        "sqlite",
+        "migration",
+        "indexing"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "vue-best-practices",
+      "category": "devops",
+      "path": "skills/devops/vue-best-practices",
+      "description": "Vue 3 最佳实践：Composition API + TypeScript 标准方案，涵盖 SSR/Volar/vue-tsc/Pinia/Router",
+      "description_en": "Vue 3 best practices with Composition API and TypeScript; covers SSR, Volar, vue-tsc, Vue Router, and Pinia for all Vue.js development tasks",
+      "tags": [
+        "vue",
+        "vue3",
+        "composition-api",
+        "typescript",
+        "pinia",
+        "SSR"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "git-essentials",
+      "category": "devops",
+      "path": "skills/devops/git-essentials",
+      "description": "Git 核心命令与工作流：版本控制、分支管理、合并策略和团队协作最佳实践",
+      "description_en": "Essential Git commands and workflows for version control, branching strategies, merging, rebasing, and team collaboration; requires Git installed",
+      "tags": [
+        "git",
+        "version-control",
+        "branching",
+        "merge",
+        "rebase",
+        "collaboration"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "using-git-worktrees",
+      "category": "devops",
+      "path": "skills/devops/using-git-worktrees",
+      "description": "Git Worktree 隔离工作区模式：在功能开发时创建隔离环境，安全验证后推进实现计划",
+      "description_en": "Use Git worktrees to create isolated workspaces for feature work; includes smart directory selection and safety verification before execution",
+      "tags": [
+        "git",
+        "worktree",
+        "isolation",
+        "feature-branch",
+        "workflow"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "clean-content-fetch",
+      "category": "devops",
+      "path": "skills/devops/clean-content-fetch",
+      "description": "获取干净可读的网页正文，支持动态渲染、微信公众号文章抓取、内容去噪，基于 Scrapling",
+      "description_en": "Fetch clean readable web content using Scrapling; handles dynamic rendering, WeChat articles, content cleanup, and noise reduction when ordinary fetch falls short",
+      "tags": [
+        "web-scraping",
+        "content-fetch",
+        "scrapling",
+        "html-to-markdown",
+        "wechat"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "microservices-patterns",
+      "category": "devops",
+      "path": "skills/devops/microservices-patterns",
+      "description": "微服务架构设计：服务边界划分、事件驱动通信、弹性模式，适用于构建分布式系统或拆分单体应用",
+      "description_en": "Design microservices architectures with service boundaries, event-driven communication, and resilience patterns; covers decomposing monoliths and distributed system design",
+      "tags": [
+        "microservices",
+        "architecture",
+        "event-driven",
+        "distributed-systems",
+        "resilience"
+      ],
+      "complexity": "advanced",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "modern-javascript-patterns",
+      "category": "devops",
+      "path": "skills/devops/modern-javascript-patterns",
+      "description": "ES6+ 现代 JavaScript 完整指南：async/await、解构、模块、迭代器、生成器、函数式编程等",
+      "description_en": "Master ES6+ features including async/await, destructuring, spread operators, modules, iterators, generators, and functional programming patterns for clean efficient JavaScript",
+      "tags": [
+        "javascript",
+        "ES6",
+        "async-await",
+        "functional-programming",
+        "modern-js"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "nextjs-app-router-patterns",
+      "category": "devops",
+      "path": "skills/devops/nextjs-app-router-patterns",
+      "description": "Next.js 14+ App Router 完整指南：Server Components、流式渲染、并行路由、高级数据获取模式",
+      "description_en": "Master Next.js 14+ App Router with Server Components, streaming, parallel routes, and advanced data fetching; covers SSR/SSG and React Server Component optimization",
+      "tags": [
+        "nextjs",
+        "app-router",
+        "server-components",
+        "streaming",
+        "react",
+        "SSR"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "postgresql-table-design",
+      "category": "devops",
+      "path": "skills/devops/postgresql-table-design",
+      "description": "PostgreSQL 表结构设计最佳实践：数据类型选择、索引策略、约束、性能优化和高级特性",
+      "description_en": "Design PostgreSQL schemas with best-practice data types, indexing strategies, constraints, performance patterns, and advanced features like partitioning and JSONB",
+      "tags": [
+        "postgresql",
+        "database",
+        "schema-design",
+        "indexing",
+        "SQL",
+        "performance"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "docker-essentials",
+      "category": "devops",
+      "path": "skills/devops/docker-essentials",
+      "description": "Docker 核心命令与工作流：容器生命周期管理、镜像操作、网络、卷和调试技巧",
+      "description_en": "Essential Docker commands and workflows for container management, image operations, networking, volumes, and debugging; requires Docker installed",
+      "tags": [
+        "docker",
+        "containers",
+        "devops",
+        "image",
+        "containerization"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "e2e-testing",
+      "category": "devops",
+      "path": "skills/devops/e2e-testing",
+      "description": "Playwright E2E 测试完整模式：Page Object Model、CI/CD 集成、Artifacts 管理、不稳定测试处理策略",
+      "description_en": "Playwright E2E testing patterns including Page Object Model, configuration, CI/CD integration, artifact management, and strategies for handling flaky tests",
+      "tags": [
+        "playwright",
+        "e2e-testing",
+        "CI/CD",
+        "page-object-model",
+        "test-automation"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "frontend-patterns",
+      "category": "devops",
+      "path": "skills/devops/frontend-patterns",
+      "description": "前端开发模式：React/Next.js 架构、状态管理、性能优化和 UI 最佳实践",
+      "description_en": "Frontend development patterns for React, Next.js, state management, performance optimization, and UI best practices",
+      "tags": [
+        "react",
+        "nextjs",
+        "frontend",
+        "state-management",
+        "performance",
+        "UI"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "api-design-principles",
+      "category": "devops",
+      "path": "skills/devops/api-design-principles",
+      "description": "REST 和 GraphQL API 设计原则，构建直观、可扩展、可维护的 API，覆盖接口规范审查和设计标准制定",
+      "description_en": "Master REST and GraphQL API design principles to build intuitive, scalable, and maintainable APIs; covers naming conventions, versioning, error handling, and documentation",
+      "tags": [
+        "API",
+        "REST",
+        "GraphQL",
+        "design-principles",
+        "openapi",
+        "backend"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "architecture-patterns",
+      "category": "devops",
+      "path": "skills/devops/architecture-patterns",
+      "description": "经典后端架构模式实践指南，涵盖清洁架构、六边形架构、领域驱动设计，用于重构复杂系统",
+      "description_en": "Implement Clean Architecture, Hexagonal Architecture, and Domain-Driven Design patterns for complex backend systems; includes refactoring guides and layer separation strategies",
+      "tags": [
+        "architecture",
+        "clean-architecture",
+        "DDD",
+        "hexagonal",
+        "backend",
+        "refactoring"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "computer-use",
+      "category": "devops",
+      "path": "skills/devops/computer-use",
+      "description": "无头 Linux 服务器全桌面自动化，基于 Xvfb + XFCE + xdotool，支持17种操作，X11 级别绕过检测，含 VNC 实时查看",
+      "description_en": "Full desktop automation for headless Linux servers using Xvfb + XFCE + xdotool with 17 actions; X11-level automation that websites cannot detect, with VNC live viewing",
+      "tags": [
+        "computer-use",
+        "automation",
+        "desktop",
+        "X11",
+        "xdotool",
+        "VNC",
+        "headless"
+      ],
+      "complexity": "advanced",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": true,
+      "has_evals": false
+    },
+    {
+      "name": "debug-pro",
+      "category": "devops",
+      "path": "skills/devops/debug-pro",
+      "description": "系统化调试方法论，含各语言调试命令速查和常见错误模式参考，支持 JS/TS/Python/Swift/CSS/网络层",
+      "description_en": "Systematic debugging methodology with language-specific commands and error pattern reference for JavaScript, TypeScript, Python, Swift, CSS, and network layers",
+      "tags": [
+        "debug",
+        "troubleshooting",
+        "javascript",
+        "python",
+        "error",
+        "profiling",
+        "breakpoint"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "security-auditor",
+      "category": "devops",
+      "path": "skills/devops/security-auditor",
+      "description": "代码安全审计工具，覆盖 OWASP Top 10、认证流程、CORS/CSP 配置、SQL 注入、XSS 防护等",
+      "description_en": "Code security review covering OWASP Top 10, authentication flows, CORS/CSP headers, secrets handling, SQL injection, XSS protection, and input validation",
+      "tags": [
+        "security",
+        "OWASP",
+        "code-review",
+        "XSS",
+        "SQL-injection",
+        "authentication",
+        "CSP"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "webapp-testing",
+      "category": "devops",
+      "path": "skills/devops/webapp-testing",
+      "description": "基于 Playwright 的本地 Web 应用交互与测试工具包，支持截图、浏览器日志查看和前端功能验证",
+      "description_en": "Toolkit for testing local web applications using Playwright; verifies frontend functionality, captures screenshots, views browser logs, and debugs UI behavior",
+      "tags": [
+        "playwright",
+        "testing",
+        "webapp",
+        "UI-testing",
+        "browser",
+        "screenshot"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": true,
+      "has_evals": false
+    },
+    {
+      "name": "image-gen",
+      "category": "document",
+      "path": "skills/document/image-gen",
+      "description": "AI 图片生成，支持 OpenAI/Google/DashScope（阿里通义）/Replicate 官方 API，支持文生图、参考图、比例设置",
+      "description_en": "AI image generation using official APIs from OpenAI, Google, DashScope (Alibaba), and Replicate; supports text-to-image, reference images, and aspect ratios",
+      "tags": [
+        "image-generation",
+        "OpenAI",
+        "DALL-E",
+        "DashScope",
+        "Replicate",
+        "text-to-image"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": true,
+      "has_evals": false
+    },
+    {
+      "name": "comic-creator",
+      "category": "document",
+      "path": "skills/document/comic-creator",
+      "description": "知识漫画创作工具，支持多种画风（線条漫画/漫画/写实/水墨）×基调组合，生成带分镜布局的教育漫画",
+      "description_en": "Create educational knowledge comics with flexible art style × tone combinations; supports ligne-claire, manga, realistic, and ink-brush styles with panel layout generation",
+      "tags": [
+        "comic",
+        "knowledge-comic",
+        "illustration",
+        "manga",
+        "education",
+        "sequential-art"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": true,
+      "has_evals": false
+    },
+    {
+      "name": "cover-image",
+      "category": "document",
+      "path": "skills/document/cover-image",
+      "description": "文章封面图生成，5维度定制（类型/配色/渲染/文字/情绪），支持电影宽屏/16:9/正方形三种比例",
+      "description_en": "Generate article cover images with 5-dimension customization (type, palette, rendering, text, mood); supports cinematic 2.35:1, widescreen 16:9, and square 1:1",
+      "tags": [
+        "cover-image",
+        "article",
+        "design",
+        "image-generation",
+        "thumbnail"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": true,
+      "has_evals": false
+    },
+    {
+      "name": "slide-deck",
+      "category": "document",
+      "path": "skills/document/slide-deck",
+      "description": "内容转专业幻灯片图组：自动规划大纲，逐页生成带设计风格的幻灯片图片",
+      "description_en": "Transform content into professional slide deck images; generates outline with style instructions then creates individual slide images for each section",
+      "tags": [
+        "slides",
+        "presentation",
+        "PPT",
+        "deck",
+        "image-generation",
+        "content-to-slides"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": true,
+      "has_evals": false
+    },
+    {
+      "name": "slidev",
+      "category": "document",
+      "path": "skills/document/slidev",
+      "description": "面向开发者的 Markdown 幻灯片工具：Vue 组件/代码高亮/动画/互动特性，适合技术演讲和教学",
+      "description_en": "Create developer-friendly presentations using Markdown, Vue components, code highlighting, animations, and interactive features; ideal for tech talks and teaching",
+      "tags": [
+        "slidev",
+        "presentation",
+        "markdown",
+        "vue",
+        "developer",
+        "animations"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "brand-guidelines",
+      "category": "document",
+      "path": "skills/document/brand-guidelines",
+      "description": "Anthropic 官方品牌色彩和字体规范，用于为任何 Artifact 应用 Anthropic 视觉风格",
+      "description_en": "Apply Anthropic's official brand colors and typography to any artifact; includes full color palette, accent colors, font stacks, and usage guidelines",
+      "tags": [
+        "branding",
+        "design",
+        "anthropic",
+        "colors",
+        "typography",
+        "styling"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "fal-ai-media",
+      "category": "document",
+      "path": "skills/document/fal-ai-media",
+      "description": "通过 fal.ai MCP 生成图像、视频和音频：文生图（Nano Banana）、文/图生视频（Seedance/Kling/Veo 3）、文生语音（CSM-1B）",
+      "description_en": "Unified AI media generation via fal.ai MCP covering text-to-image, text/image-to-video, text-to-speech, and video-to-audio; requires fal.ai MCP configured",
+      "tags": [
+        "fal-ai",
+        "image-generation",
+        "video-generation",
+        "text-to-speech",
+        "MCP",
+        "media"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "frontend-slides",
+      "category": "document",
+      "path": "skills/document/frontend-slides",
+      "description": "从零创建动画丰富的 HTML 演示幻灯片，或将 PowerPoint 文件转换为 Web 形式，支持多种视觉风格探索",
+      "description_en": "Create animation-rich HTML presentations from scratch or convert PowerPoint files to web format; helps non-designers explore visual styles through preset options",
+      "tags": [
+        "slides",
+        "presentation",
+        "HTML",
+        "animation",
+        "PPTX",
+        "pitch-deck"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "markdown-to-html",
+      "category": "document",
+      "path": "skills/document/markdown-to-html",
+      "description": "Markdown 转微信兼容 HTML，含代码高亮、数学公式、PlantUML、脚注和告警框，内联 CSS 样式",
+      "description_en": "Convert Markdown to beautifully styled HTML with inline CSS, code highlighting, math, PlantUML, footnotes, and alerts; optimized for WeChat Official Account",
+      "tags": [
+        "markdown",
+        "HTML",
+        "wechat",
+        "code-highlight",
+        "converter",
+        "styling"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": true,
+      "has_evals": false
+    },
+    {
+      "name": "algorithmic-art",
+      "category": "document",
+      "path": "skills/document/algorithmic-art",
+      "description": "使用 p5.js 创作算法生成艺术，支持随机种子和交互参数探索，输出含参数控制的交互式 HTML",
+      "description_en": "Create algorithmic generative art using p5.js with seeded randomness; supports flow fields, particle systems, and interactive parameter exploration in HTML artifacts",
+      "tags": [
+        "generative-art",
+        "p5.js",
+        "creative-coding",
+        "flow-field",
+        "particle-system",
+        "procedural"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "docx",
+      "category": "document",
+      "path": "skills/document/docx",
+      "description": "全功能 .docx 文档创建、编辑与分析，支持追踪更改、批注、格式保留和文本提取",
+      "description_en": "Comprehensive .docx document creation, editing, and analysis with tracked changes, comments, formatting preservation, and text extraction capabilities",
+      "tags": [
+        "docx",
+        "word",
+        "document",
+        "tracked-changes",
+        "formatting",
+        "office"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "pdf",
+      "category": "document",
+      "path": "skills/document/pdf",
+      "description": "PDF 全功能处理工具包：文本和表格提取、新建 PDF、合并/拆分文档、表单填写，大规模程序化处理",
+      "description_en": "Comprehensive PDF toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms at scale",
+      "tags": [
+        "PDF",
+        "document",
+        "extraction",
+        "forms",
+        "merge",
+        "split",
+        "programmatic"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "theme-factory",
+      "category": "document",
+      "path": "skills/document/theme-factory",
+      "description": "为任意 Artifact 应用一致的专业主题（颜色+字体），含10套预设主题，支持幻灯片、文档、报告、HTML 页面",
+      "description_en": "Apply consistent professional color and font themes to any artifact — slides, documents, reports, HTML pages; includes 10 pre-set themes and custom theme generation",
+      "tags": [
+        "theme",
+        "design",
+        "styling",
+        "color-scheme",
+        "fonts",
+        "presentation",
+        "slides"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "readgzh",
+      "category": "productivity",
+      "path": "skills/productivity/readgzh",
+      "description": "AI 阅读完整微信公众号文章，支持普通图文和付费内容，通过 ReadGZH 服务抓取解析",
+      "description_en": "Read full-text WeChat Official Account articles via ReadGZH service; supports standard articles and image-post formats with optional API key for higher rate limits",
+      "tags": [
+        "wechat",
+        "公众号",
+        "微信文章",
+        "readgzh",
+        "content-extraction"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "youtube-transcript",
+      "category": "productivity",
+      "path": "skills/productivity/youtube-transcript",
+      "description": "获取 YouTube 视频字幕/转录文本并生成摘要，支持绕过 YouTube 对云端 IP 的限制",
+      "description_en": "Fetch and summarize YouTube video transcripts; handles transcript fetching via residential IP proxy to bypass YouTube's cloud IP blocks",
+      "tags": [
+        "youtube",
+        "transcript",
+        "captions",
+        "summarize",
+        "video-content"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "x-to-markdown",
+      "category": "productivity",
+      "path": "skills/productivity/x-to-markdown",
+      "description": "将 X (Twitter) 推文和长文转换为带 YAML frontmatter 的 Markdown，需用户明确授权（使用逆向 API）",
+      "description_en": "Convert X/Twitter tweets and articles to Markdown with YAML front matter; uses reverse-engineered API requiring explicit user consent before activation",
+      "tags": [
+        "twitter",
+        "X",
+        "markdown",
+        "tweet-to-markdown",
+        "content-extraction"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": true,
+      "has_evals": false
+    },
+    {
+      "name": "image-enhancer",
+      "category": "productivity",
+      "path": "skills/productivity/image-enhancer",
+      "description": "图片质量提升工具：分辨率增强、锐化、压缩噪点修复，适用于截图、演示文稿、社交媒体用图",
+      "description_en": "Improve image quality by enhancing resolution, sharpness, and clarity; reduces compression artifacts for screenshots, presentations, and social media posts",
+      "tags": [
+        "image",
+        "enhancement",
+        "upscale",
+        "sharpening",
+        "screenshot",
+        "quality"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "compress-image",
+      "category": "productivity",
+      "path": "skills/productivity/compress-image",
+      "description": "图片压缩工具，自动选择最优工具（sips/cwebp/ImageMagick）转换为 WebP 或 PNG，支持批量处理",
+      "description_en": "Compress images to WebP or PNG with automatic tool selection (sips → cwebp → ImageMagick → Sharp); supports batch processing and recursive directories",
+      "tags": [
+        "image",
+        "compression",
+        "WebP",
+        "optimization",
+        "batch",
+        "imagemagick"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": true,
+      "has_evals": false
+    },
+    {
+      "name": "url-to-markdown",
+      "category": "productivity",
+      "path": "skills/productivity/url-to-markdown",
+      "description": "通过 Chrome CDP 抓取任意 URL 并转换为 Markdown，支持需登录的页面（等待用户操作模式）",
+      "description_en": "Fetch any URL via Chrome CDP and convert HTML to clean Markdown; supports two modes — auto-capture on load or wait for user signal for login-required pages",
+      "tags": [
+        "url",
+        "markdown",
+        "scraping",
+        "chrome-cdp",
+        "web-to-markdown",
+        "content-extraction"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": true,
+      "has_evals": false
+    },
+    {
+      "name": "video-editing",
+      "category": "productivity",
+      "path": "skills/productivity/video-editing",
+      "description": "AI 辅助视频编辑工作流，覆盖从原始素材到成片的完整流程：FFmpeg 剪辑、Remotion 动画、ElevenLabs 配音、fal.ai 增强",
+      "description_en": "AI-assisted video editing pipeline from raw footage to final cut using FFmpeg, Remotion, ElevenLabs, fal.ai, and Descript/CapCut; covers cutting, structuring, and augmenting real footage",
+      "tags": [
+        "video-editing",
+        "ffmpeg",
+        "remotion",
+        "elevenlabs",
+        "fal-ai",
+        "content-creation"
+      ],
+      "complexity": "advanced",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "domain-name-brainstormer",
+      "category": "productivity",
+      "path": "skills/productivity/domain-name-brainstormer",
+      "description": "为项目生成创意域名方案并批量检查多个 TLD 可用性（.com/.io/.dev/.ai 等），节省大量人工查询时间",
+      "description_en": "Generate creative domain name ideas and check availability across multiple TLDs (.com, .io, .dev, .ai, etc.) in bulk",
+      "tags": [
+        "domain",
+        "naming",
+        "branding",
+        "TLD",
+        "availability",
+        "startup"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "file-organizer",
+      "category": "productivity",
+      "path": "skills/productivity/file-organizer",
+      "description": "智能文件整理工具，理解上下文语义、检测重复文件、建议更优目录结构，自动化清理数字工作空间",
+      "description_en": "Intelligently organize files and folders by understanding context, finding duplicates, suggesting better structures, and automating cleanup tasks",
+      "tags": [
+        "file-management",
+        "organization",
+        "duplicates",
+        "automation",
+        "productivity"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "invoice-organizer",
+      "category": "productivity",
+      "path": "skills/productivity/invoice-organizer",
+      "description": "自动整理发票和收据以备税务申报，提取关键信息、统一命名规则、按逻辑分类归档",
+      "description_en": "Automatically organize invoices and receipts for tax preparation by extracting key info, renaming consistently, and sorting into logical folders",
+      "tags": [
+        "invoice",
+        "receipts",
+        "tax",
+        "bookkeeping",
+        "organization",
+        "finance"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "meeting-insights-analyzer",
+      "category": "productivity",
+      "path": "skills/productivity/meeting-insights-analyzer",
+      "description": "分析会议记录和录音，识别行为模式、沟通洞察和改进建议，帮助专业人士提升沟通和领导力",
+      "description_en": "Analyze meeting transcripts to uncover behavioral patterns and communication insights; identifies conflict avoidance, filler words, conversation dominance, and missed listening opportunities",
+      "tags": [
+        "meeting",
+        "transcript",
+        "communication",
+        "leadership",
+        "feedback",
+        "analysis"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "raffle-winner-picker",
+      "category": "productivity",
+      "path": "skills/productivity/raffle-winner-picker",
+      "description": "从列表、电子表格或 Google Sheets 中随机公平抽取获奖者，支持抽奖、竞赛等场景",
+      "description_en": "Pick random winners from lists, spreadsheets, or Google Sheets for giveaways, raffles, and contests with fair and transparent selection",
+      "tags": [
+        "raffle",
+        "giveaway",
+        "random",
+        "winner",
+        "contest",
+        "spreadsheet"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "slack-gif-creator",
+      "category": "productivity",
+      "path": "skills/productivity/slack-gif-creator",
+      "description": "使用 Python (Pillow + imageio) 创作适配 Slack 的动态 GIF，支持消息 GIF（2MB 上限）和 Emoji GIF（64KB 严格限制）",
+      "description_en": "Create animated GIFs optimized for Slack using Python; supports message GIFs (up to 2MB, 480×480) and emoji GIFs (strict 64KB limit, 128×128)",
+      "tags": [
+        "GIF",
+        "slack",
+        "animation",
+        "emoji",
+        "python",
+        "pillow"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "video-downloader",
+      "category": "productivity",
+      "path": "skills/productivity/video-downloader",
+      "description": "使用 yt-dlp 下载 YouTube 及其他在线视频，支持多种质量（最高到1080p）和格式（mp4/webm/mp3）",
+      "description_en": "Download YouTube and other online videos using yt-dlp with quality settings (best, 1080p, 720p, etc.), multiple formats (mp4, webm, mkv), and audio-only MP3 extraction",
+      "tags": [
+        "youtube",
+        "download",
+        "yt-dlp",
+        "video",
+        "audio",
+        "mp3"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "tailored-resume-generator",
+      "category": "recruitment",
+      "path": "skills/recruitment/tailored-resume-generator",
+      "description": "分析职位描述并生成定制化简历，突出与岗位匹配的经历、技能和成就，提升面试机会",
+      "description_en": "Analyze job descriptions and generate tailored resumes that highlight relevant experience, skills, and achievements to maximize interview chances",
+      "tags": [
+        "resume",
+        "CV",
+        "job-application",
+        "recruitment",
+        "tailoring"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "deep-research-pro",
+      "category": "research",
+      "path": "skills/research/deep-research-pro",
+      "description": "多源深度研究 Agent：搜索网络、综合信息、生成带引用的研究报告，无需 API Key",
+      "description_en": "Multi-source deep research agent that searches the web, synthesizes findings, and delivers cited reports; no API keys required",
+      "tags": [
+        "research",
+        "web-search",
+        "synthesis",
+        "citations",
+        "report"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "programmatic-seo",
+      "category": "research",
+      "path": "skills/research/programmatic-seo",
+      "description": "程序化 SEO：用模板和数据批量创建 SEO 优化页面，适合目录页、地区页、比较页、集成页等场景",
+      "description_en": "Create SEO-driven pages at scale using templates and data; covers directory pages, location pages, comparison pages, and integration pages without thin content penalties",
+      "tags": [
+        "SEO",
+        "programmatic-SEO",
+        "content-at-scale",
+        "templates",
+        "landing-pages"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "data-analysis",
+      "category": "research",
+      "path": "skills/research/data-analysis",
+      "description": "用统计严谨性将原始数据转化为决策依据，支持 A/B 测试、队列分析、流失分析、假设检验等",
+      "description_en": "Turn raw data into decisions with statistical rigor; covers A/B testing, cohort analysis, churn analysis, hypothesis testing, regression, and common analytical pitfalls",
+      "tags": [
+        "data-analysis",
+        "statistics",
+        "A/B-test",
+        "cohort",
+        "regression",
+        "hypothesis-testing"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "lead-research-assistant",
+      "category": "research",
+      "path": "skills/research/lead-research-assistant",
+      "description": "识别高质量销售线索，分析目标公司、提供可操作的联系策略，适用于销售、BD 和市场专业人士",
+      "description_en": "Identify high-quality leads by analyzing your business, searching for target companies, and providing actionable contact strategies for sales and business development",
+      "tags": [
+        "leads",
+        "sales",
+        "B2B",
+        "prospecting",
+        "business-development",
+        "research"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "seo-audit",
+      "category": "research",
+      "path": "skills/research/seo-audit",
+      "description": "SEO 问题诊断与审计，覆盖技术 SEO、页面优化、元标签审查、排名原因分析等核心场景",
+      "description_en": "Audit and diagnose SEO issues including technical SEO, on-page optimization, meta tags review, and ranking analysis; identifies why pages aren't ranking",
+      "tags": [
+        "SEO",
+        "audit",
+        "technical-SEO",
+        "on-page",
+        "meta-tags",
+        "ranking"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "twitter-algorithm-optimizer",
+      "category": "social-media",
+      "path": "skills/social-media/twitter-algorithm-optimizer",
+      "description": "基于 Twitter 开源算法洞察分析和优化推文，重写推文以最大化覆盖率和互动量",
+      "description_en": "Analyze and optimize tweets for maximum reach using Twitter's open-source algorithm insights; rewrites tweets to improve engagement and visibility",
+      "tags": [
+        "twitter",
+        "X",
+        "tweet",
+        "algorithm",
+        "engagement",
+        "social-media",
+        "optimization"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "content-research-writer",
+      "category": "writing",
+      "path": "skills/writing/content-research-writer",
+      "description": "高质量内容写作助手，提供研究调查、引用添加、标题优化、大纲迭代和实时反馈，全程协作式写作",
+      "description_en": "Collaborative writing assistant that conducts research, adds citations, improves hooks, iterates on outlines, and provides real-time feedback section by section",
+      "tags": [
+        "content-writing",
+        "research",
+        "citations",
+        "blog",
+        "copywriting",
+        "SEO-writing"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "internal-comms",
+      "category": "writing",
+      "path": "skills/writing/internal-comms",
+      "description": "企业内部沟通文档写作，支持 3P 周报、公司 Newsletter、FAQ、项目状态报告、领导层更新、事故报告等格式",
+      "description_en": "Write internal communications in standard formats: 3P updates (Progress/Plans/Problems), company newsletters, FAQs, project status reports, leadership updates, and incident reports",
+      "tags": [
+        "internal-comms",
+        "3P-update",
+        "newsletter",
+        "status-report",
+        "FAQ",
+        "incident-report"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "agent-reach",
+      "category": "ai-agent",
+      "path": "skills/ai-agent/agent-reach",
+      "description": "统一多平台内容读取与搜索，支持 Twitter/X、Reddit、YouTube、GitHub、B站、小红书等9个平台",
+      "description_en": "Unified multi-platform content reader and searcher supporting Twitter/X, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu, RSS, and any web page via single CLI",
+      "tags": [
+        "twitter",
+        "reddit",
+        "youtube",
+        "github",
+        "bilibili",
+        "小红书",
+        "search",
+        "scraping",
+        "agent"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "article-writing",
+      "category": "writing",
+      "path": "skills/writing/article-writing",
+      "description": "长文内容写作：从示例或品牌指导中提取独特语调，创作博客/教程/Newsletter/指南，确保声音一致性",
+      "description_en": "Write long-form content in a distinctive voice derived from examples or brand guidance; covers blog posts, guides, tutorials, and newsletter issues with voice consistency",
+      "tags": [
+        "writing",
+        "blog",
+        "long-form",
+        "voice",
+        "tutorial",
+        "newsletter",
+        "content"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "investor-materials",
+      "category": "writing",
+      "path": "skills/writing/investor-materials",
+      "description": "创建和更新投资者材料：Pitch Deck、一页纸、投资备忘录、财务模型、加速器申请，保持内部一致性",
+      "description_en": "Create pitch decks, one-pagers, investor memos, financial models, and accelerator applications that stay internally consistent across all fundraising assets",
+      "tags": [
+        "pitch-deck",
+        "fundraising",
+        "investor",
+        "startup",
+        "financial-model",
+        "VC"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "copy-editing",
+      "category": "writing",
+      "path": "skills/writing/copy-editing",
+      "description": "系统化营销文案编辑：多轮专项检查（清晰度/说服力/CTA/格式），用于优化现有营销文案",
+      "description_en": "Systematic marketing copy editing through multiple focused passes covering clarity, persuasion, CTAs, and formatting; use when improving existing copy rather than writing from scratch",
+      "tags": [
+        "copy-editing",
+        "marketing",
+        "copywriting",
+        "proofreading",
+        "CTA",
+        "conversion"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": true
+    },
+    {
+      "name": "format-markdown",
+      "category": "writing",
+      "path": "skills/writing/format-markdown",
+      "description": "Markdown 格式化工具：为纯文本或 Markdown 添加 frontmatter、标题、摘要、加粗、列表和代码块",
+      "description_en": "Format plain text or Markdown files with frontmatter, titles, summaries, headings, bold, lists, and code blocks; outputs as {filename}-formatted.md",
+      "tags": [
+        "markdown",
+        "formatting",
+        "frontmatter",
+        "beautify",
+        "structure"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": true,
+      "has_evals": false
+    },
+    {
+      "name": "investor-outreach",
+      "category": "writing",
+      "path": "skills/writing/investor-outreach",
+      "description": "投资者冷邮件/预热介绍/跟进邮件/更新邮件写作，简洁个性化，适合天使/VC/战略投资者/加速器",
+      "description_en": "Draft cold emails, warm intro blurbs, follow-ups, and update emails for angels, VCs, strategic investors, and accelerators; concise and personalized investor messaging",
+      "tags": [
+        "fundraising",
+        "investor",
+        "email",
+        "cold-outreach",
+        "startup",
+        "VC"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "marketing-psychology",
+      "category": "writing",
+      "path": "skills/writing/marketing-psychology",
+      "description": "70+ 营销心理学模型和认知偏差应用：说服原则、行为科学、消费者决策机制在营销中的实践",
+      "description_en": "Apply 70+ psychological principles and mental models to marketing; covers cognitive biases, persuasion frameworks, behavioral science, and consumer decision-making",
+      "tags": [
+        "marketing",
+        "psychology",
+        "persuasion",
+        "cognitive-bias",
+        "behavioral-science",
+        "mental-models"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "pricing-strategy",
+      "category": "writing",
+      "path": "skills/writing/pricing-strategy",
+      "description": "定价策略与货币化方案：分层定价/免费增值/价值指标/Van Westendorp/定价包装研究",
+      "description_en": "Pricing decisions, packaging, and monetization strategy covering pricing tiers, freemium, value metrics, Van Westendorp analysis, and willingness-to-pay research",
+      "tags": [
+        "pricing",
+        "monetization",
+        "freemium",
+        "packaging",
+        "SaaS",
+        "strategy"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "launch-strategy",
+      "category": "writing",
+      "path": "skills/writing/launch-strategy",
+      "description": "产品发布/功能上线/GTM 策略：分阶段发布计划、Product Hunt 策略、渠道规划、早期访问和等待列表",
+      "description_en": "Plan product launches, feature announcements, and go-to-market strategies; covers phased launches, Product Hunt, channel strategy, beta access, and waitlist management",
+      "tags": [
+        "launch",
+        "go-to-market",
+        "Product-Hunt",
+        "GTM",
+        "announcement",
+        "marketing"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "viral-writer",
+      "category": "writing",
+      "path": "skills/writing/viral-writer",
+      "description": "自媒体爆款内容创作，基于11个洞见维度，支持微信公众号、小红书、抖音三种平台风格",
+      "description_en": "Viral content creation for WeChat, XiaoHongShu, and TikTok using 11 content insight dimensions including emotion curves, hooks, and persuasion strategies",
+      "tags": [
+        "公众号",
+        "小红书",
+        "抖音",
+        "爆款",
+        "内容创作",
+        "自媒体",
+        "写作"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "zh"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "deep-research",
+      "category": "research",
+      "path": "skills/research/deep-research",
+      "description": "13智能体学术深度研究系统，支持全量、快速、苏格拉底对话、文献综述、事实核查、系统性综述等7种模式",
+      "description_en": "Universal 13-agent academic deep research pipeline with 7 modes: full, quick, socratic, lit-review, fact-check, review, and PRISMA systematic review with meta-analysis",
+      "tags": [
+        "research",
+        "academic",
+        "literature-review",
+        "systematic-review",
+        "APA",
+        "PRISMA",
+        "meta-analysis",
+        "深度研究"
+      ],
+      "complexity": "advanced",
+      "languages": [
+        "zh-TW",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "academic-paper",
+      "category": "research",
+      "path": "skills/research/academic-paper",
+      "description": "12智能体学术论文写作系统，支持 IMRaD、文献综述、理论、案例研究等结构，APA 7.0/MLA/IEEE/Chicago 等格式",
+      "description_en": "12-agent academic paper writing pipeline supporting IMRaD, literature review, theoretical, case study, and conference paper structures with LaTeX/DOCX/PDF output",
+      "tags": [
+        "academic-paper",
+        "LaTeX",
+        "APA",
+        "论文写作",
+        "学术",
+        "摘要",
+        "引用"
+      ],
+      "complexity": "advanced",
+      "languages": [
+        "zh-TW",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "academic-paper-reviewer",
+      "category": "research",
+      "path": "skills/research/academic-paper-reviewer",
+      "description": "5视角学术论文同行评审，模拟主编+3位审稿人+魔鬼代言人对论文进行多维评估",
+      "description_en": "Multi-perspective academic paper review simulating 5 independent reviewers (EIC, 3 peer reviewers, Devil's Advocate) with field-specific expertise",
+      "tags": [
+        "peer-review",
+        "academic",
+        "paper-review",
+        "manuscript",
+        "editorial",
+        "论文审稿"
+      ],
+      "complexity": "advanced",
+      "languages": [
+        "zh-TW",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "academic-pipeline",
+      "category": "research",
+      "path": "skills/research/academic-pipeline",
+      "description": "全流程学术研究编排器：研究→写作→完整性检查→同行评审→修订→再审稿→终稿，9阶段端到端工作流",
+      "description_en": "Full academic research pipeline orchestrator: research → write → integrity check → review → revise → re-review → finalize in a 9-stage automated workflow",
+      "tags": [
+        "academic",
+        "pipeline",
+        "orchestration",
+        "research-to-publication",
+        "full-workflow"
+      ],
+      "complexity": "advanced",
+      "languages": [
+        "zh-TW",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "artifacts-builder",
+      "category": "devops",
+      "path": "skills/devops/artifacts-builder",
+      "description": "构建复杂多组件 claude.ai HTML Artifact，基于 React + TypeScript + shadcn/ui 技术栈，一键打包为单文件 HTML",
+      "description_en": "Build elaborate multi-component claude.ai HTML artifacts using React, TypeScript, Tailwind CSS, and shadcn/ui; bundle everything into a single self-contained HTML file",
+      "tags": [
+        "artifact",
+        "react",
+        "shadcn",
+        "tailwind",
+        "frontend",
+        "claude.ai"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": true,
+      "has_evals": false
+    },
+    {
+      "name": "mcp-builder",
+      "category": "ai-agent",
+      "path": "skills/ai-agent/mcp-builder",
+      "description": "构建高质量 MCP (Model Context Protocol) 服务器，支持 Python (FastMCP) 和 Node/TypeScript 实现",
+      "description_en": "Guide for creating high-quality MCP servers that enable LLMs to interact with external services, covering design principles, implementation, and testing in Python or TypeScript",
+      "tags": [
+        "MCP",
+        "model-context-protocol",
+        "server",
+        "tool-integration",
+        "API"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "skill-creator",
+      "category": "ai-agent",
+      "path": "skills/ai-agent/skill-creator",
+      "description": "创建和更新 Claude Skill 的权威指南，涵盖 Skill 结构、编写最佳实践和工具集成",
+      "description_en": "Guide for creating effective Claude skills with specialized knowledge, workflows, or tool integrations; covers skill anatomy, frontmatter, and bundled resources",
+      "tags": [
+        "skill-creation",
+        "skill-authoring",
+        "claude",
+        "workflow"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "changelog-generator",
+      "category": "devops",
+      "path": "skills/devops/changelog-generator",
+      "description": "从 git 提交历史自动生成面向用户的 Changelog，将技术性提交转化为清晰的版本发布说明",
+      "description_en": "Automatically generate user-facing changelogs from git commit history, categorizing and translating technical commits into customer-friendly release notes",
+      "tags": [
+        "changelog",
+        "git",
+        "release-notes",
+        "versioning",
+        "devops"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "competitive-ads-extractor",
+      "category": "research",
+      "path": "skills/research/competitive-ads-extractor",
+      "description": "从 Facebook、LinkedIn 等广告库提取并分析竞品广告，识别有效的信息传达策略和创意模式",
+      "description_en": "Extract and analyze competitors' ads from ad libraries (Facebook, LinkedIn, etc.) to understand messaging, pain points, and creative patterns that are working",
+      "tags": [
+        "competitive-analysis",
+        "ads",
+        "facebook-ad-library",
+        "marketing",
+        "copywriting"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "canvas-design",
+      "category": "document",
+      "path": "skills/document/canvas-design",
+      "description": "创作美术馆级视觉设计作品，先生成设计哲学再表达为 PNG/PDF 艺术品，高度视觉化输出",
+      "description_en": "Create museum-quality visual art by first generating a design philosophy then expressing it visually as .png or .pdf files; 90% visual, 10% essential text",
+      "tags": [
+        "design",
+        "art",
+        "poster",
+        "visual",
+        "PDF",
+        "PNG",
+        "graphic-design"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "article-illustrator",
+      "category": "writing",
+      "path": "skills/writing/article-illustrator",
+      "description": "分析文章结构、识别配图位置，使用「类型 × 风格」两维度方法为文章生成一致性插图",
+      "description_en": "Analyze article structure, identify illustration positions, and generate images with consistent Type × Style (infographic/scene × minimal/watercolor) two-dimension approach",
+      "tags": [
+        "illustration",
+        "article",
+        "image-generation",
+        "配图",
+        "插图"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "infographic-generator",
+      "category": "writing",
+      "path": "skills/writing/infographic-generator",
+      "description": "专业信息图生成器，21种布局类型 × 20种视觉风格，生成适合发布的高质量信息图",
+      "description_en": "Professional infographic generator with 21 layout types and 20 visual styles; analyzes content and recommends optimal layout×style combinations for publication-ready output",
+      "tags": [
+        "infographic",
+        "visualization",
+        "信息图",
+        "可视化",
+        "图表"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "post-to-wechat",
+      "category": "social-media",
+      "path": "skills/social-media/post-to-wechat",
+      "description": "通过 API 或 Chrome CDP 发布内容到微信公众号，支持文章和图文两种形式",
+      "description_en": "Post content to WeChat Official Account via API or Chrome CDP; supports article posting with HTML/Markdown and image-text posting with multiple images",
+      "tags": [
+        "wechat",
+        "公众号",
+        "微信",
+        "发布",
+        "自动化"
+      ],
+      "complexity": "advanced",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": true,
+      "has_evals": false
+    },
+    {
+      "name": "post-to-x",
+      "category": "social-media",
+      "path": "skills/social-media/post-to-x",
+      "description": "通过真实 Chrome CDP 自动发布内容到 X (Twitter)，支持普通推文和 X Articles 长文",
+      "description_en": "Post content and articles to X (Twitter) using real Chrome CDP automation, supporting regular posts with media and X Articles long-form Markdown",
+      "tags": [
+        "twitter",
+        "X",
+        "tweet",
+        "social-media",
+        "automation",
+        "发推"
+      ],
+      "complexity": "advanced",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": true,
+      "has_evals": false
+    },
+    {
+      "name": "ai-humanizer",
+      "category": "writing",
+      "path": "skills/writing/ai-humanizer",
+      "description": "检测并去除 AI 写作痕迹，使用24种模式检测器和500+AI词汇列表，将文本改写为自然的人类写作风格",
+      "description_en": "Detect and remove AI writing patterns using 24 pattern detectors, 500+ AI vocabulary terms, and statistical analysis; rewrite text to sound natural and human",
+      "tags": [
+        "humanize",
+        "AI-writing",
+        "writing-quality",
+        "de-AI",
+        "natural-writing"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "agent-team-orchestration",
+      "category": "ai-agent",
+      "path": "skills/ai-agent/agent-team-orchestration",
+      "description": "多智能体团队编排，定义角色、任务生命周期、交接协议和质量门禁，支持2+智能体协作",
+      "description_en": "Production playbook for running multi-agent teams with defined roles, task lifecycle (inbox→spec→build→review→done), handoff protocols, and quality gates",
+      "tags": [
+        "multi-agent",
+        "orchestration",
+        "agent-team",
+        "workflow",
+        "handoff"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "brainstorming",
+      "category": "productivity",
+      "path": "skills/productivity/brainstorming",
+      "description": "将创意想法转化为完整设计方案，通过苏格拉底对话澄清需求，在实施前必须完成设计评审",
+      "description_en": "Turn ideas into fully-formed designs through collaborative dialogue; explores context, asks clarifying questions, proposes approaches, and requires design approval before any implementation",
+      "tags": [
+        "brainstorming",
+        "design",
+        "planning",
+        "requirements",
+        "ideation"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "copywriting",
+      "category": "writing",
+      "path": "skills/writing/copywriting",
+      "description": "专业营销文案写作，涵盖主页、落地页、定价页、功能页等，以转化为核心目标",
+      "description_en": "Expert conversion copywriting for homepages, landing pages, pricing pages, and feature pages; gathers audience, product, and context before writing",
+      "tags": [
+        "copywriting",
+        "marketing",
+        "conversion",
+        "landing-page",
+        "homepage",
+        "CTA"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "content-strategy",
+      "category": "writing",
+      "path": "skills/writing/content-strategy",
+      "description": "内容策略规划，帮助确定内容选题、主题集群和发布计划，以流量和潜在客户获取为目标",
+      "description_en": "Plan content strategies that drive traffic, build authority, and generate leads; identifies topic clusters, content gaps, and publication priorities",
+      "tags": [
+        "content-strategy",
+        "SEO",
+        "blog",
+        "content-planning",
+        "topic-clusters"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "code-review",
+      "category": "devops",
+      "path": "skills/devops/code-review",
+      "description": "系统性代码评审检查单，覆盖安全性、性能、可维护性、正确性和测试五个维度，含严重性分级",
+      "description_en": "Systematic code review covering security, performance, maintainability, correctness, and testing with severity levels and structured feedback guidance",
+      "tags": [
+        "code-review",
+        "PR-review",
+        "security",
+        "testing",
+        "quality"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "agent-memory",
+      "category": "ai-agent",
+      "path": "skills/ai-agent/agent-memory",
+      "description": "AI 智能体跨会话持久化记忆系统，支持事实存储、经验学习、实体追踪，使用本地 SQLite 数据库",
+      "description_en": "Persistent memory system for AI agents to remember facts, learn from experience, and track entities across sessions using a local SQLite database",
+      "tags": [
+        "agent",
+        "memory",
+        "persistence",
+        "SQLite",
+        "cross-session"
+      ],
+      "complexity": "advanced",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "market-research",
+      "category": "research",
+      "path": "skills/research/market-research",
+      "description": "市场调研、竞品分析、投资者尽调，生成带来源引用的决策导向研究报告",
+      "description_en": "Conduct market research, competitive analysis, and investor due diligence with source attribution; produces decision-oriented reports with market sizing and competitor comparisons",
+      "tags": [
+        "market-research",
+        "competitive-analysis",
+        "due-diligence",
+        "TAM",
+        "business-intelligence"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "tdd-workflow",
+      "category": "devops",
+      "path": "skills/devops/tdd-workflow",
+      "description": "测试驱动开发工作流，强制先写测试再实现，要求 80%+ 覆盖率，包含单元、集成、E2E 测试",
+      "description_en": "Enforce test-driven development with 80%+ coverage including unit, integration, and E2E tests; tests written before code for all new features and bug fixes",
+      "tags": [
+        "TDD",
+        "testing",
+        "unit-test",
+        "e2e",
+        "coverage",
+        "test-driven"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "crosspost",
+      "category": "social-media",
+      "path": "skills/social-media/crosspost",
+      "description": "多平台内容分发：将内容适配为 X、LinkedIn、Threads 和 Bluesky 的平台原生格式，从不跨平台发布相同内容",
+      "description_en": "Multi-platform content distribution across X, LinkedIn, Threads, and Bluesky; adapts content per platform using content-engine patterns, never posts identical cross-platform content",
+      "tags": [
+        "crosspost",
+        "social-media",
+        "X",
+        "linkedin",
+        "threads",
+        "bluesky",
+        "distribution"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "x-api",
+      "category": "social-media",
+      "path": "skills/social-media/x-api",
+      "description": "X/Twitter API 程序化集成：发推、发帖文、读取时间线、搜索、数据分析，含 OAuth 认证和限速处理",
+      "description_en": "X/Twitter API integration for posting tweets, threads, reading timelines, search, and analytics; covers OAuth auth patterns and rate limit handling",
+      "tags": [
+        "twitter",
+        "X",
+        "API",
+        "OAuth",
+        "tweets",
+        "automation",
+        "social-media"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "xhs-images",
+      "category": "social-media",
+      "path": "skills/social-media/xhs-images",
+      "description": "小红书信息图系列生成：10种视觉风格 × 8种布局，将内容拆分为1-10张卡通风格图片",
+      "description_en": "Generate Xiaohongshu infographic series with 10 visual styles and 8 layouts; breaks content into 1-10 cartoon-style images optimized for XHS engagement",
+      "tags": [
+        "小红书",
+        "XiaoHongShu",
+        "RedNote",
+        "infographic",
+        "social-media",
+        "Chinese-platform"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": true,
+      "has_evals": false
+    },
+    {
+      "name": "content-engine",
+      "category": "social-media",
+      "path": "skills/social-media/content-engine",
+      "description": "平台原生内容创作引擎，支持 X、LinkedIn、TikTok、YouTube、Newsletter，将单一素材适配多平台",
+      "description_en": "Create platform-native content for X, LinkedIn, TikTok, YouTube, and newsletters; adapts one source asset into distinct formats for each platform",
+      "tags": [
+        "social-media",
+        "content",
+        "X",
+        "LinkedIn",
+        "TikTok",
+        "YouTube",
+        "repurpose"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "content-collector",
+      "category": "social-media",
+      "path": "skills/social-media/content-collector",
+      "description": "自动收集社交媒体内容（X/Twitter、即刻、公众号、Reddit、知乎、Bilibili 等）并整理成结构化笔记存入飞书多维表格，支持平台检测、去重、AI 摘要",
+      "description_en": "Automatically collect social media content (X/Twitter, Jike, WeChat, Reddit, Zhihu, Bilibili, etc.) and organize it into structured notes stored in Feishu databases, with platform detection, deduplication, and AI summarization",
+      "tags": [
+        "social-media",
+        "feishu",
+        "content-collection",
+        "twitter",
+        "wechat",
+        "reddit",
+        "知识管理"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh"
+      ],
+      "has_scripts": true,
+      "has_evals": false
+    },
+    {
+      "name": "write-a-prd",
+      "category": "productivity",
+      "path": "skills/productivity/write-a-prd",
+      "description": "通过用户访谈、代码库探索和模块设计，创建产品需求文档（PRD），并以 GitHub Issue 形式提交",
+      "description_en": "Create a PRD through user interview, codebase exploration, and module design, then submit as a GitHub issue",
+      "tags": [
+        "PRD",
+        "product-requirements",
+        "planning",
+        "github-issue",
+        "interview"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "prd-to-issues",
+      "category": "productivity",
+      "path": "skills/productivity/prd-to-issues",
+      "description": "将 PRD 拆解为可独立认领的 GitHub Issue，使用垂直切片（tracer bullet）方式",
+      "description_en": "Break a PRD into independently-grabbable GitHub issues using tracer-bullet vertical slices",
+      "tags": [
+        "PRD",
+        "github-issue",
+        "vertical-slice",
+        "planning",
+        "agile"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "prd-to-plan",
+      "category": "productivity",
+      "path": "skills/productivity/prd-to-plan",
+      "description": "将 PRD 拆解为分阶段实施计划，使用垂直切片方式，保存到 ./plans/ 目录",
+      "description_en": "Break a PRD into a phased implementation plan using vertical slices, saved to ./plans/",
+      "tags": [
+        "PRD",
+        "planning",
+        "vertical-slice",
+        "roadmap",
+        "phases"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "grill-me",
+      "category": "productivity",
+      "path": "skills/productivity/grill-me",
+      "description": "对用户的方案或设计进行无情的深度访谈，直到达成共识，解决决策树的每个分支",
+      "description_en": "Interview the user relentlessly about a plan or design until reaching shared understanding",
+      "tags": [
+        "design-review",
+        "interview",
+        "planning",
+        "decision-tree",
+        "stress-test"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "scaffold-exercises",
+      "category": "productivity",
+      "path": "skills/productivity/scaffold-exercises",
+      "description": "为 ai-hero-cli 创建通过 lint 检查的练习目录结构，然后用 git commit 提交",
+      "description_en": "Create exercise directory structures that pass ai-hero-cli lint, then commit with git",
+      "tags": [
+        "exercises",
+        "scaffolding",
+        "ai-hero-cli",
+        "directory-structure",
+        "education"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "ubiquitous-language",
+      "category": "productivity",
+      "path": "skills/productivity/ubiquitous-language",
+      "description": "从当前对话中提取领域术语，整理为规范词汇表，保存到 UBIQUITOUS_LANGUAGE.md",
+      "description_en": "Extract domain terminology from conversation into a canonical glossary, saved to UBIQUITOUS_LANGUAGE.md",
+      "tags": [
+        "domain-language",
+        "glossary",
+        "terminology",
+        "DDD",
+        "documentation"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "tdd",
+      "category": "devops",
+      "path": "skills/devops/tdd",
+      "description": "使用红绿重构循环进行测试驱动开发（TDD），通过公共接口验证行为而非实现细节",
+      "description_en": "Test-driven development with red-green-refactor loop, verifying behavior through public interfaces",
+      "tags": [
+        "TDD",
+        "testing",
+        "red-green-refactor",
+        "deep-modules",
+        "TypeScript"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "triage-issue",
+      "category": "devops",
+      "path": "skills/devops/triage-issue",
+      "description": "通过代码库探索定位 Bug 根因，然后创建包含 TDD 修复计划的 GitHub Issue",
+      "description_en": "Triage a bug by exploring the codebase to find root cause, then create a GitHub issue with a TDD-based fix plan",
+      "tags": [
+        "bug-triage",
+        "github-issue",
+        "TDD",
+        "root-cause",
+        "debugging"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "improve-codebase-architecture",
+      "category": "devops",
+      "path": "skills/devops/improve-codebase-architecture",
+      "description": "探索代码库以发现架构改进机会，专注于通过加深浅模块（shallow modules）来提升可测试性",
+      "description_en": "Explore a codebase to find architectural improvement opportunities, focusing on deepening shallow modules for testability",
+      "tags": [
+        "architecture",
+        "refactoring",
+        "deep-modules",
+        "testability",
+        "RFC"
+      ],
+      "complexity": "advanced",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "request-refactor-plan",
+      "category": "devops",
+      "path": "skills/devops/request-refactor-plan",
+      "description": "通过用户访谈创建详细的重构计划（小提交方式），并提交为 GitHub Issue",
+      "description_en": "Create a detailed refactor plan with tiny commits via user interview, then file it as a GitHub issue",
+      "tags": [
+        "refactoring",
+        "github-issue",
+        "planning",
+        "commits",
+        "RFC"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "setup-pre-commit",
+      "category": "devops",
+      "path": "skills/devops/setup-pre-commit",
+      "description": "配置 Husky pre-commit hooks，集成 lint-staged、Prettier、类型检查和测试",
+      "description_en": "Set up Husky pre-commit hooks with lint-staged, Prettier, type checking and tests",
+      "tags": [
+        "husky",
+        "lint-staged",
+        "prettier",
+        "pre-commit",
+        "git-hooks"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "git-guardrails-claude-code",
+      "category": "devops",
+      "path": "skills/devops/git-guardrails-claude-code",
+      "description": "设置 Claude Code hooks 以阻止危险的 git 命令（push、reset --hard、clean、branch -D 等）",
+      "description_en": "Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D) before they execute",
+      "tags": [
+        "git",
+        "hooks",
+        "safety",
+        "claude-code",
+        "guardrails"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": true,
+      "has_evals": false
+    },
+    {
+      "name": "migrate-to-shoehorn",
+      "category": "devops",
+      "path": "skills/devops/migrate-to-shoehorn",
+      "description": "将测试文件中的 as 类型断言迁移到 @total-typescript/shoehorn，提升 TypeScript 测试的类型安全性",
+      "description_en": "Migrate test files from as type assertions to @total-typescript/shoehorn for type-safe partial test data",
+      "tags": [
+        "TypeScript",
+        "testing",
+        "shoehorn",
+        "type-safety",
+        "migration"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "design-an-interface",
+      "category": "devops",
+      "path": "skills/devops/design-an-interface",
+      "description": "通过并行生成多个截然不同的接口设计方案，然后比较权衡，找到最佳设计",
+      "description_en": "Generate multiple radically different interface designs in parallel, then compare trade-offs to find the best approach",
+      "tags": [
+        "interface-design",
+        "architecture",
+        "deep-modules",
+        "design-patterns",
+        "API"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "edit-article",
+      "category": "writing",
+      "path": "skills/writing/edit-article",
+      "description": "通过重构章节、提升清晰度和精炼文字来编辑和改进文章",
+      "description_en": "Edit and improve articles by restructuring sections, improving clarity, and tightening prose",
+      "tags": [
+        "editing",
+        "article",
+        "writing",
+        "clarity",
+        "structure"
+      ],
+      "complexity": "minimal",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "write-a-skill",
+      "category": "ai-agent",
+      "path": "skills/ai-agent/write-a-skill",
+      "description": "创建具有正确结构、渐进式披露和捆绑资源的新 Agent Skill",
+      "description_en": "Create new agent skills with proper structure, progressive disclosure, and bundled resources",
+      "tags": [
+        "skill-creation",
+        "agent",
+        "claude-code",
+        "meta",
+        "automation"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "obsidian-vault",
+      "category": "knowledge-base",
+      "path": "skills/knowledge-base/obsidian-vault",
+      "description": "在 Obsidian Vault 中搜索、创建和管理笔记，使用 wikilinks 和索引笔记进行组织",
+      "description_en": "Search, create, and manage notes in the Obsidian vault with wikilinks and index notes",
+      "tags": [
+        "obsidian",
+        "notes",
+        "knowledge-management",
+        "wikilinks",
+        "PKM"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "xiaohongshu-publisher",
+      "category": "social-media",
+      "path": "skills/social-media/xiaohongshu-publisher",
+      "description": "自动发布图文/视频到小红书，支持登录检查、内容检索、评论互动、数据抓取和多账号管理，基于 Chrome DevTools Protocol",
+      "description_en": "Automate publishing image/video content to Xiaohongshu (XHS), with login check, content search, comment interaction, data scraping, and multi-account management via Chrome DevTools Protocol",
+      "tags": [
+        "xiaohongshu",
+        "XHS",
+        "social-media",
+        "automation",
+        "publishing",
+        "CDP",
+        "scraping"
+      ],
+      "complexity": "standard",
+      "languages": [
+        "zh"
+      ],
+      "has_scripts": true,
+      "has_evals": false
+    }
+  ]
+}
