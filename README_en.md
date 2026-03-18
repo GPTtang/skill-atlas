@@ -20,16 +20,42 @@ A Skill is a structured instruction file (`SKILL.md`) that tells Claude how to h
 
 ## Quick Start
 
-**Claude Code** (recommended):
+**Option 1: Install a single Skill (Claude Code)**
 
 ```bash
 cp -r skills/devops/code-review ~/.claude/skills/
 claude
 ```
 
-**Claude.ai**: Open any Skill directory → download `SKILL.md` → click 🧩 in your conversation to upload.
+Claude automatically detects when to apply the Skill — no manual triggering needed.
 
-**API**: Pass the contents of `SKILL.md` as the `system` prompt.
+**Option 2: MCP Server (dynamic on-demand loading, recommended)**
+
+Configure once to make the entire library available on-demand. Claude searches and loads Skills automatically during conversation.
+
+```bash
+# 1. Build the MCP server
+cd mcp-server && npm install && npm run build
+
+# 2. Register in Claude Code (edit ~/.claude/settings.json)
+```
+
+```json
+{
+  "mcpServers": {
+    "skill-atlas": {
+      "command": "node",
+      "args": ["/path/to/skill-atlas/mcp-server/dist/index.js"]
+    }
+  }
+}
+```
+
+Claude will automatically call `search_skills` → `get_skill` to load the right Skill for your task.
+
+**Option 3: Claude.ai**: Open any Skill directory → download `SKILL.md` → click 🧩 in your conversation to upload.
+
+**Option 4: API**: Pass the contents of `SKILL.md` as the `system` prompt.
 
 ---
 
