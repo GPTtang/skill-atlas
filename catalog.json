@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated_at": "2026-03-18",
+  "updated_at": "2026-03-22",
   "categories": [
     {
       "id": "ai-agent",
@@ -54,6 +54,66 @@
     }
   ],
   "skills": [
+    {
+      "name": "pptx",
+      "category": "document",
+      "path": "skills/document/pptx",
+      "description": "PowerPoint 全流程处理：读取/提取内容、从模板编辑、从零创建幻灯片。包含设计规范、配色方案、版式建议和视觉 QA 工作流",
+      "description_en": "Complete PowerPoint operations: read/extract content, edit from templates, create slide decks from scratch. Includes design guidelines, color palettes, layout recommendations, and visual QA workflow",
+      "tags": ["pptx", "presentation", "slides", "office", "design"],
+      "complexity": "intermediate",
+      "languages": ["en"],
+      "has_scripts": true,
+      "has_evals": false
+    },
+    {
+      "name": "xlsx",
+      "category": "document",
+      "path": "skills/document/xlsx",
+      "description": "Excel 电子表格创建、编辑与分析：公式驱动建模、金融模型配色规范、零错误公式验证，支持 .xlsx/.csv/.tsv 格式",
+      "description_en": "Excel spreadsheet creation, editing, and analysis: formula-driven modeling, financial model color coding standards, zero-error formula verification; supports .xlsx, .xlsm, .csv, .tsv formats",
+      "tags": ["xlsx", "excel", "spreadsheet", "finance", "data-analysis", "formulas"],
+      "complexity": "intermediate",
+      "languages": ["en"],
+      "has_scripts": true,
+      "has_evals": false
+    },
+    {
+      "name": "doc-coauthoring",
+      "category": "document",
+      "path": "skills/document/doc-coauthoring",
+      "description": "结构化文档协作写作工作流：三阶段流程（情境收集→逐节精炼→读者测试），适用于 PRD、决策文档、技术规范等重要文档",
+      "description_en": "Structured collaborative document creation workflow: three-stage process (context gathering → section-by-section refinement → reader testing) for PRDs, decision docs, technical specs, and proposals",
+      "tags": ["documentation", "writing", "collaboration", "PRD", "spec"],
+      "complexity": "intermediate",
+      "languages": ["en"],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "frontend-design",
+      "category": "devops",
+      "path": "skills/devops/frontend-design",
+      "description": "生成具有鲜明设计风格的前端界面：突破「AI 审美疲劳」，注重排版、配色、动效和空间构图，适用于网页、落地页、React 组件等",
+      "description_en": "Create distinctive, production-grade frontend interfaces that avoid generic AI aesthetics; focuses on typography, color systems, motion, and spatial composition for web pages, landing pages, and React components",
+      "tags": ["frontend", "design", "UI", "CSS", "React", "typography", "animation"],
+      "complexity": "intermediate",
+      "languages": ["en"],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
+      "name": "context-engineering",
+      "category": "ai-agent",
+      "path": "skills/ai-agent/context-engineering",
+      "description": "AI Agent 上下文工程最佳实践合集：上下文基础原理、多 Agent 架构模式、记忆系统设计、上下文压缩与优化、评估框架",
+      "description_en": "Comprehensive guide for production AI agent context engineering: context fundamentals, multi-agent coordination patterns, memory system design, context compression/optimization, and evaluation frameworks",
+      "tags": ["context-engineering", "agent", "multi-agent", "memory", "optimization", "RAG"],
+      "complexity": "advanced",
+      "languages": ["en"],
+      "has_scripts": false,
+      "has_evals": false
+    },
     {
       "name": "rag-implementation",
       "category": "ai-agent",

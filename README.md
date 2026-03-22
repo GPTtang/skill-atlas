@@ -3,7 +3,7 @@
 **108 个即用 Claude Skills，覆盖 AI Agent、开发、写作、研究、社交媒体等场景。**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-![Skills](https://img.shields.io/badge/Skills-108-blue)
+![Skills](https://img.shields.io/badge/Skills-131-blue)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [English](README_en.md) · [中文](README.md) · [日本語](README_ja.md) · [贡献 Skill](CONTRIBUTING.md) · [编写规范](SKILL_SPEC.md)

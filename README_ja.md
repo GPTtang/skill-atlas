@@ -3,7 +3,7 @@
 **即戦力の Claude Skills コレクション — AI エージェント、開発、ライティング、リサーチ、SNS など 107 個を収録。**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-![Skills](https://img.shields.io/badge/Skills-107-blue)
+![Skills](https://img.shields.io/badge/Skills-131-blue)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [English](README_en.md) · [中文](README.md) · [日本語](README_ja.md) · [Skill を投稿](CONTRIBUTING.md) · [作成仕様](SKILL_SPEC.md)
