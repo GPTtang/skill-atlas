@@ -2320,6 +2320,32 @@
       "has_evals": false
     },
     {
+      "name": "x-twitter-scraper",
+      "category": "social-media",
+      "path": "skills/social-media/x-twitter-scraper",
+      "description": "Xquik 驱动的 X/Twitter 数据技能：推文搜索、用户资料、粉丝导出、媒体下载、账号监控、webhook、MCP 与 SDK 工作流",
+      "description_en": "Xquik-powered X/Twitter data skill for tweet search, user lookup, follower export, media download, monitoring, webhooks, MCP, and SDK workflows",
+      "tags": [
+        "twitter",
+        "X",
+        "scraping",
+        "tweet-search",
+        "followers",
+        "media-download",
+        "webhooks",
+        "MCP",
+        "social-media"
+      ],
+      "complexity": "advanced",
+      "languages": [
+        "zh",
+        "en",
+        "ja"
+      ],
+      "has_scripts": false,
+      "has_evals": false
+    },
+    {
       "name": "xhs-images",
       "category": "social-media",
       "path": "skills/social-media/xhs-images",

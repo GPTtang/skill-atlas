@@ -1,9 +1,9 @@
 # Skill Atlas
 
-**108 个即用 Claude Skills，覆盖 AI Agent、开发、写作、研究、社交媒体等场景。**
+**132 个即用 Claude Skills，覆盖 AI Agent、开发、写作、研究、社交媒体等场景。**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-![Skills](https://img.shields.io/badge/Skills-131-blue)
+![Skills](https://img.shields.io/badge/Skills-132-blue)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [English](README_en.md) · [中文](README.md) · [日本語](README_ja.md) · [贡献 Skill](CONTRIBUTING.md) · [编写规范](SKILL_SPEC.md)
@@ -67,7 +67,7 @@ cd mcp-server && npm install && npm run build
 | [⚙️ 开发运维](#️-开发运维-29) | 29 | 代码审查、架构模式、测试、Docker、数据库、前后端框架 |
 | [✍️ 写作](#️-写作-16) | 16 | 长文创作、文案、内容策略、营销心理学、融资材料 |
 | [🔬 研究](#-研究-11) | 11 | 学术论文、深度调研、市场分析、数据分析、SEO |
-| [📱 社交媒体](#-社交媒体-8) | 8 | X/Twitter、微信、小红书、LinkedIn、多平台分发、内容收藏 |
+| [📱 社交媒体](#-社交媒体-9) | 9 | X/Twitter、微信、小红书、LinkedIn、多平台分发、内容收藏 |
 | [📄 文档](#-文档-14) | 14 | 幻灯片、PDF、图片生成、算法艺术、主题设计 |
 | [🗂️ 效率工具](#️-效率工具-15) | 15 | 文件整理、图片处理、视频下载、会议分析、抽奖 |
 | [🏢 招聘](#-招聘-1) | 1 | 定制化简历生成 |
@@ -184,7 +184,7 @@ cd mcp-server && npm install && npm run build
 
 </details>
 
-### 📱 社交媒体 (8)
+### 📱 社交媒体 (9)
 
 <details open>
 <summary>展开查看</summary>
@@ -197,6 +197,7 @@ cd mcp-server && npm install && npm run build
 | [post-to-x](skills/social-media/post-to-x/) | 通过 Chrome CDP 自动发布推文和 X Articles 长文 |
 | [twitter-algorithm-optimizer](skills/social-media/twitter-algorithm-optimizer/) | 基于 Twitter 开源算法洞察优化推文，最大化覆盖率和互动量 |
 | [x-api](skills/social-media/x-api/) | X/Twitter API 程序化集成：发推、读取时间线、搜索、数据分析 |
+| [x-twitter-scraper](skills/social-media/x-twitter-scraper/) | Xquik 驱动的 X/Twitter 数据技能：推文搜索、用户资料、粉丝导出、媒体下载、监控、webhook、MCP 与 SDK 工作流 |
 | [xhs-images](skills/social-media/xhs-images/) | 小红书信息图系列：10种视觉风格×8种布局，生成1-10张卡通风格图片 |
 | [content-collector](skills/social-media/content-collector/) | 自动收集 X/Twitter、即刻、公众号、Reddit 等多平台内容，AI 整理后存入飞书多维表格 |
 
