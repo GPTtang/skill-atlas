@@ -1,9 +1,9 @@
 # Skill Atlas
 
-**即戦力の Claude Skills コレクション — AI エージェント、開発、ライティング、リサーチ、SNS など 107 個を収録。**
+**即戦力の Claude Skills コレクション。AI エージェント、開発、ライティング、リサーチ、SNS など 132 個を収録。**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-![Skills](https://img.shields.io/badge/Skills-131-blue)
+![Skills](https://img.shields.io/badge/Skills-132-blue)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [English](README_en.md) · [中文](README.md) · [日本語](README_ja.md) · [Skill を投稿](CONTRIBUTING.md) · [作成仕様](SKILL_SPEC.md)
@@ -41,7 +41,7 @@ claude
 | [⚙️ 開発・DevOps](#️-開発devops-29) | 29 | コードレビュー、アーキテクチャ、テスト、Docker、DB、フロント/バックエンド |
 | [✍️ ライティング](#️-ライティング-16) | 16 | 長文コンテンツ、コピーライティング、コンテンツ戦略、マーケティング心理学 |
 | [🔬 リサーチ](#-リサーチ-11) | 11 | 学術論文、ディープリサーチ、市場分析、データ分析、SEO |
-| [📱 SNS](#-sns-7) | 7 | X/Twitter、WeChat、XiaoHongShu、LinkedIn、マルチプラットフォーム配信 |
+| [📱 SNS](#-sns-8) | 8 | X/Twitter、WeChat、XiaoHongShu、LinkedIn、マルチプラットフォーム配信 |
 | [📄 ドキュメント](#-ドキュメント-14) | 14 | スライド、PDF、画像生成、アルゴリズムアート、テーマデザイン |
 | [🗂️ 生産性](#️-生産性-15) | 15 | ファイル整理、画像処理、動画ダウンロード、会議分析、抽選 |
 | [🏢 採用](#-採用-1) | 1 | カスタマイズ履歴書生成 |
@@ -158,7 +158,7 @@ claude
 
 </details>
 
-### 📱 SNS (7)
+### 📱 SNS (8)
 
 <details open>
 <summary>一覧を見る</summary>
@@ -171,6 +171,7 @@ claude
 | [post-to-x](skills/social-media/post-to-x/) | Chrome CDP 自動化でツイートと X Articles 長文を投稿 |
 | [twitter-algorithm-optimizer](skills/social-media/twitter-algorithm-optimizer/) | Twitter のオープンソースアルゴリズムの知見を活かしてリーチと engagement を最大化 |
 | [x-api](skills/social-media/x-api/) | X/Twitter API 統合：投稿・タイムライン読み取り・検索・分析 |
+| [x-twitter-scraper](skills/social-media/x-twitter-scraper/) | Xquik を使う X/Twitter データ Skill。ツイート検索、ユーザー取得、フォロワー出力、メディア保存、監視、webhook、MCP、SDK ワークフローに対応 |
 | [xhs-images](skills/social-media/xhs-images/) | 小紅書（XiaoHongShu）画像シリーズ：10 ビジュアルスタイル × 8 レイアウト |
 
 </details>
