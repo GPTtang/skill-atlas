@@ -53,21 +53,25 @@ collection.
 ### Get A User Profile
 
 ```bash
-curl "https://xquik.com/api/v1/x/users/by/username/openai" \
+curl "https://xquik.com/api/v1/x/users/openai" \
   -H "x-api-key: $XQUIK_API_KEY"
 ```
 
 Use this before timeline, follower, or media requests when the user provides a
-username instead of an ID.
+username instead of a numeric ID. The path value can be a username or user ID.
 
 ### Use MCP
 
 When MCP is available, configure the remote endpoint with the same API key and
-prefer schema-guided calls:
+prefer schema-guided code execution:
 
-1. Call `explore` to inspect available operation groups.
-2. Call `xquik` with the chosen operation ID and validated arguments.
+1. Call `explore` with an async function to inspect matching endpoints.
+2. Call `xquik` with an async function that uses `xquik.request(path, options)`.
 3. Return only the fields needed for the user's task.
+
+```javascript
+async () => xquik.request('/api/v1/x/users/openai')
+```
 
 ## Output Format
 
